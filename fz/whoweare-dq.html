@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RED BOX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css">
+    <!-- Choices.js [Custom select]-->
+    <link rel="stylesheet" href="/vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+
+    <!-- 引入 Playfair Display（英文） + Noto Serif SC（中文） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wide" id="all">
+      <!-- Navbar Sticky-->
+      <header class="nav-holder make-sticky">
+        <div class="navbar navbar-light bg-white navbar-expand-lg py-0" id="navbar">
+          <div class="container py-3 py-lg-0 px-lg-0">
+            <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img class="d-none d-md-inline-block" src="/img/logo.png" alt="logo"><img class="d-inline-block d-md-none" src="/img/logo-small.png" alt="Universal logo"><span class="sr-only">Universal - go to homepage</span></a>
+            <!-- Navbar toggler-->
+            <button class="navbar-toggler text-primary border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navigationCollapse" aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="sr-only">Toggle navigation</span><i class="fas fa-align-justify"></i></button>
+            <!-- Collapsed Navigation    -->
+            <div class="collapse navbar-collapse" id="navigationCollapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- homepage dropdown-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我們是誰</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">總覽</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zxt.html">主席團</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-dq.html">地區代表</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/explore/6711e4e8000000001b02ddc0?app_platform=android&ignoreEngage=true&app_version=8.98.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBy4hOG63ho9TasGnWqv0YILkZ-iOY0GvIpGB5T7w2lrs=&author_share=1&xhsshare=CopyLink&shareRedId=N0oyNUdHNDo2NzUyOTgwNjc5OTo6N0dM&apptime=1756610772&share_id=37ffda8513514e2fae96de66446849f3&share_channel=copy_link">榮譽堂</a></li>
+                  </ul>
+                </li>
+                <!-- megamenu [features]-->
+                <li class="nav-item dropdown menu-large"><a class="nav-link dropdown-toggle" id="featuresMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我們的故事</a>
+                  <ul class="dropdown-menu megamenu p-4" aria-labelledby="featuresMegamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-lg-6"><img class="d-none d-lg-block" src="/img/template-mac.avif" alt="" style="width:100%; height:300px; object-fit:cover;"></div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">總覽</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">簡介</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="timeline.html">時間軸</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">具體工作</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">經濟貧困</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">認知貧困</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">思想貧困</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- megamenu [portfolio]-->
+                <li class="nav-item dropdown menu-large"><a class="nav-link dropdown-toggle" id="portfolioMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">雜誌</a>
+                  <ul class="dropdown-menu megamenu p-4" aria-labelledby="portfolioMegamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-lg-6"><img class="img-fluid d-none d-lg-block" src="/img/menupic.avif" alt=""></div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">圖片牆</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2025.html">2025年</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2024.html">2024年</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2023.html">2023年</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">報道文章</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/Cby7a9WhzMU4dLygqX-CTQ">《與Red box一起，看見女孩生理健康需求》</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/4BjENzspUxSld6Ge5FrR5w">《Red Box “關愛每一位她”》</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/n3meWjMab6jASq5W47GJ2Q">《點亮未來，傳遞愛的力量！MKBS愛心義賣活動圓滿收攤》</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- megamenu [all pages]-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">聯繫我們</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/user/profile/632524790000000023039c24?xsec_token=YBH17jsyfOGZIiuzKkRZNyOq1BkbjBcT-L5WYY1ZxGPP4%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5d05db0100000000160362ac&apptime=1754746879&share_id=9bd8f2041f524cc9854579d193649e5e&share_channel=copy_link">小紅書：Redbox公益組織</a></li>
+                    <li>
+                      <a class="dropdown-item text-uppercase border-bottom" 
+                        href="javascript:void(0);" 
+                        onclick="copyEmail()">
+                        Email：chinaredboxorg@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- dropdown menu [contact]-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切換語言</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/whoweare-dq.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-dq.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/whoweare-dq.html">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- HEADING BREADCRUMB -->
+      <section class="bg-red text-center" style="min-height:180px; display:flex; align-items:center;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <h1 class="cn-text-neibu">我們是誰？</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ACCORIOND SECTION-->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-5">
+            <!-- PAGE SIDEBAR-->
+            <div class="col-lg-3">
+              <nav class="nav flex-column nav-pills fs-5"> 
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="whoweare-zl.html">
+                  <span>總覽</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="whoweare-zxt.html">
+                  <span>主席團</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="whoweare-dq.html">
+                  <span>地區代表</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="https://www.xiaohongshu.com/explore/6711e4e8000000001b02ddc0?app_platform=android&ignoreEngage=true&app_version=8.98.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBy4hOG63ho9TasGnWqv0YILkZ-iOY0GvIpGB5T7w2lrs=&author_share=1&xhsshare=CopyLink&shareRedId=N0oyNUdHNDo2NzUyOTgwNjc5OTo6N0dM&apptime=1756610772&share_id=37ffda8513514e2fae96de66446849f3&share_channel=copy_link">
+                  <span>榮譽堂</span><i class="fas fa-angle-right"></i></a>
+              </nav>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="map-container">
+                <img src="/img/map.png" alt="World Map" class="map-image">
+
+                <!-- 坐標圖標示例 -->
+                <div class="map-marker" style="top:49.6%; left:28%;" 
+                    data-avatar="/img/avatar1.jpg"
+                    data-title="美國·馬薩諸塞州"
+                    data-name="王藝澄"
+                    data-link="region-asia.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:49%; left:26.9%;" 
+                    data-avatar="/img/whoweare/operation.avif"
+                    data-title="美國·紐約州"
+                    data-name="潘晉宸"
+                    data-link="region-asia.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:53%; left:26.4%;" 
+                    data-avatar="/img/whoweare/president.avif"
+                    data-title="美國·北卡州"
+                    data-name="李鑫源"
+                    data-link="region-asia.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:43%; left:47.6%;" 
+                    data-avatar="/img/whoweare/finance.avif"
+                    data-title="英國·倫敦"
+                    data-name="李茗羽"
+                    data-link="region-asia.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:84%; left:88.7%;" 
+                    data-avatar="/img/whoweare/xini.avif"
+                    data-title="澳洲·悉尼"
+                    data-name="余婧瑄"
+                    data-link="region-asia.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:59.4%; left:78.9%;" 
+                    data-avatar="/img/whoweare/HR.avif"
+                    data-title="中國·香港"
+                    data-name="郭禹涵"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:59.2%; left:77.6%;" 
+                    data-avatar="/img/whoweare/ga.avif"
+                    data-title="中國·廣東"
+                    data-name="陳冠琳"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:56.7%; left:75.8%;" 
+                    data-avatar="/img/whoweare/sichuan.avif"
+                    data-title="中國·四川"
+                    data-name="鄧攀"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:54%; left:79.9%;" 
+                    data-avatar="/img/avatar2.jpg"
+                    data-title="中國·江蘇"
+                    data-name="Alice"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:58.2%; left:79.9%;" 
+                    data-avatar="/img/whoweare/marketing.avif"
+                    data-title="中國·福建"
+                    data-name="阮意舒"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:56.4%; left:80.9%;" 
+                    data-avatar="/img/whoweare/president.avif"
+                    data-title="中國·浙江"
+                    data-name="李鑫源"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+                <div class="map-marker" style="top:56.5%; left:77%;" 
+                    data-avatar="/img/avatar2.jpg"
+                    data-title="中國·重慶"
+                    data-name="王藝澄"
+                    data-link="region-europe.html">
+                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
+                </div>
+
+
+                <!-- 信息框 -->
+                <div class="info-box" id="infoBox">
+                  <img id="infoAvatar" src="" alt="avatar">
+                  <div>
+                    <a id="infoName" href="#" class="name"></a>
+                    <br>
+                    <a id="infoTitle" href="#" class="title"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+            .info-box {
+              position: absolute;
+              display: none; /* 默认隐藏 */
+              flex-direction: column; /* 头像在上，文字在下 */
+              align-items: center;
+              background: white;
+              padding: 10px;
+              border-radius: 6px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+              pointer-events: none; /* 点击穿透 */
+              width: 120px; /* 证件照风格固定宽度 */
+              z-index: 10;
+              text-align: center;
+            }
+
+            .info-box img {
+              width: 100%; /* 宽度填满info-box */
+              height: 150px; /* 证件照长方形高度 */
+              object-fit: cover;
+              border-radius: 4px; /* 可以稍微圆角 */
+              margin-bottom: 8px;
+            }
+
+            .info-box .title {
+              font-weight: 600;
+              font-size: 0.85rem;
+              color: #bf544f;
+              text-decoration: none;
+              margin-bottom: 4px;
+            }
+
+            .info-box .name {
+              font-size: 0.95rem;
+              color: #221e1e;
+              text-decoration: none;
+            }
+
+            .info-box .title:hover,
+            .info-box .name:hover {
+              text-decoration: underline;
+            }
+
+            .map-container {
+              position: relative;
+              width: 100%;
+              max-width: 1400px;
+              height: 618px; /* 必须固定高度 */
+            }
+            .map-image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .map-marker {
+              position: absolute;
+              transform: translate(-50%, -50%);
+              cursor: pointer;
+              transition: transform 0.2s ease; /* 平滑过渡 */
+            }
+
+            .map-marker:hover {
+              transform: translate(-50%, -50%) scale(1.3); /* 放大 1.3 倍 */
+            }
+
+            .marker-icon {
+              width: 20px; 
+              height: 30px; 
+            }
+
+
+            </style>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script>
+              // map info box
+              const markers = document.querySelectorAll('.map-marker');
+              const infoBox = document.getElementById('infoBox');
+              const infoAvatar = document.getElementById('infoAvatar');
+              const infoTitle = document.getElementById('infoTitle');
+              const infoName = document.getElementById('infoName');
+
+              markers.forEach(marker => {
+                marker.addEventListener('click', (e) => {
+                  const rect = marker.getBoundingClientRect();
+                  const containerRect = marker.parentElement.getBoundingClientRect();
+
+                  infoAvatar.src = marker.dataset.avatar;
+                  infoTitle.textContent = marker.dataset.title;
+                  infoTitle.href = marker.dataset.link;
+                  infoName.textContent = marker.dataset.name;
+                  infoName.href = marker.dataset.link;
+
+                  infoBox.style.top = (marker.offsetTop - infoBox.offsetHeight - 10) + 'px';
+                  infoBox.style.left = (marker.offsetLeft - infoBox.offsetWidth/2 + marker.offsetWidth/2) + 'px';
+                  infoBox.style.display = 'flex';
+                });
+              });
+
+              // 点击页面其他地方隐藏 info box
+              document.addEventListener('click', function(e) {
+                if(!e.target.closest('.map-marker') && !e.target.closest('#infoBox')) {
+                  infoBox.style.display = 'none';
+                }
+              });
+            </script>
+
+            </body>
+            </html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RED BOX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css">
+    <!-- Choices.js [Custom select]-->
+    <link rel="stylesheet" href="/vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+
+    <!-- 引入 Playfair Display（英文） + Noto Serif SC（中文） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wide" id="all">
+      <!-- Navbar Sticky-->
+      <header class="nav-holder make-sticky">
+        <div class="navbar navbar-light bg-white navbar-expand-lg py-0" id="navbar">
+          <div class="container py-3 py-lg-0 px-lg-0">
+            <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img class="d-none d-md-inline-block" src="/img/logo.png" alt="logo"><img class="d-inline-block d-md-none" src="/img/logo-small.png" alt="Universal logo"><span class="sr-only">Universal - go to homepage</span></a>
+            <!-- Navbar toggler-->
+            <button class="navbar-toggler text-primary border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navigationCollapse" aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="sr-only">Toggle navigation</span><i class="fas fa-align-justify"></i></button>
+            <!-- Collapsed Navigation    -->
+            <div class="collapse navbar-collapse" id="navigationCollapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- homepage dropdown-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我们是谁</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">总览</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zxt.html">主席团</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-dq.html">地区代表</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/explore/6711e4e8000000001b02ddc0?app_platform=android&ignoreEngage=true&app_version=8.98.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBy4hOG63ho9TasGnWqv0YILkZ-iOY0GvIpGB5T7w2lrs=&author_share=1&xhsshare=CopyLink&shareRedId=N0oyNUdHNDo2NzUyOTgwNjc5OTo6N0dM&apptime=1756610772&share_id=37ffda8513514e2fae96de66446849f3&share_channel=copy_link">荣誉堂</a></li>
+                  </ul>
+                </li>
+                <!-- megamenu [features]-->
+                <li class="nav-item dropdown menu-large"><a class="nav-link dropdown-toggle" id="featuresMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我们的故事</a>
+                  <ul class="dropdown-menu megamenu p-4" aria-labelledby="featuresMegamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-lg-6"><img class="d-none d-lg-block" src="/img/template-mac.avif" alt="" style="width:100%; height:300px; object-fit:cover;"></div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">总览</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">简介</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="timeline.html">时间轴</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">具体工作</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">经济贫困</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">认知贫困</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="ways.html">思想贫困</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- megamenu [portfolio]-->
+                <li class="nav-item dropdown menu-large"><a class="nav-link dropdown-toggle" id="portfolioMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">杂志</a>
+                  <ul class="dropdown-menu megamenu p-4" aria-labelledby="portfolioMegamenu">
+                    <li>
+                      <div class="row">
+                        <div class="col-lg-6"><img class="img-fluid d-none d-lg-block" src="/img/menupic.avif" alt=""></div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">图片墙</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2025.html">2025年</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2024.html">2024年</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2023.html">2023年</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <h5 class="text-dark text-uppercase pb-2 border-bottom">报道文章</h5>
+                          <ul class="list-unstyled mb-3">
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/Cby7a9WhzMU4dLygqX-CTQ">《与Red box一起，看见女孩生理健康需求》</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/4BjENzspUxSld6Ge5FrR5w">《Red Box “关爱每一位她”》</a></li>
+                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/n3meWjMab6jASq5W47GJ2Q">《点亮未来，传递爱的力量！MKBS爱心义卖活动圆满收摊》</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- megamenu [all pages]-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">联系我们</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/user/profile/632524790000000023039c24?xsec_token=YBH17jsyfOGZIiuzKkRZNyOq1BkbjBcT-L5WYY1ZxGPP4%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5d05db0100000000160362ac&apptime=1754746879&share_id=9bd8f2041f524cc9854579d193649e5e&share_channel=copy_link">小红书：Redbox公益组织</a></li>
+                    <li>
+                      <a class="dropdown-item text-uppercase border-bottom" 
+                        href="javascript:void(0);" 
+                        onclick="copyEmail()">
+                        Email：chinaredboxorg@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- dropdown menu [contact]-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切换语言</a>
+                  <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="index.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/index.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/index.html">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HERO SLIDER SECTION-->
+      <section class="text-white bg-cover bg-center primary-overlay overlay-dense" style="background: url('/img/indexbg.avif') repeat; padding: 60px 0;">
+        <div class="overlay-content py-5 d-flex justify-content-center align-items-center" style="padding: 60px 0;">
+          <div class="container text-center">
+            <h1 class="fw-bold en-text" style="font-size: 9rem;">RED BOX</h1>
+            <ul class="list-unstyled fw-bold mt-3">
+              <li class="cn-text" style="font-size: 2.6rem;">打破沉默，终结贫困</li>
+              <li class="en-text-italic" style="font-size: 1.3rem;">Breaking the Silence, Ending the Poverty.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION-->
+      <section class="py-5" style="background-color: #fff4f4;">
+        <div class="container py-4">
+          <div class="row mb-5 align-items-center clickable-row position-relative" onclick="location.href='whoweare-zl.html'" style="cursor: pointer;">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-center mb-2 mb-md-0 position-relative" style="padding-right: 2rem;">
+              <h3 class="mb-2" style="color: #bf544f; font-weight: 800; font-size: 1.9rem; transform: translateY(7px);">我们是谁？</h3>
+              <div class="d-block d-md-none mx-auto" style="width: 100px; height: 2px; background-color: #a62323;"></div>
+              <div class="d-none d-md-block position-absolute top-0" style="width: 6px; height: 100%; background-color: #a62323; right: 5rem;"></div>
+            </div>
+            <div class="col-md-8 ps-md-4">
+              <p class="mb-0 text-muted fs-5 lh-base">
+                Red Box是一个来自中国的公益组织，由高中生发起创立，由各年龄段的成员发展共筑。通过系列活动等方式，我们致力于打破社会偏见，消除月经羞耻，逐步解决部分地区因物资、知识匮乏而遗留的月经贫困问题。
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-5 align-items-center clickable-row position-relative" onclick="location.href='jjpk.html'" style="cursor: pointer;">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-center mb-2 mb-md-0 position-relative" style="padding-right: 2rem;">
+              <h3 class="mb-2" style="color: #bf544f; font-weight: 800; font-size: 1.9rem; transform: translateY(7px);">面临的问题</h3>
+              <div class="d-block d-md-none mx-auto" style="width: 100px; height: 2px; background-color: #a62323;"></div>
+              <div class="d-none d-md-block position-absolute top-0" style="width: 6px; height: 100%; background-color: #a62323; right: 5rem;"></div>
+            </div>
+            <div class="col-md-8 ps-md-4">
+              <p class="mb-0 text-muted fs-5 lh-base">
+                由于物质及精神上的局限性，许多山区女孩仍面临着生理用品以及相关知识的匮乏问题。据调查，世界上仍有5亿女性受月经贫困所扰，这意味着她们不得不直面购买卫生用品时经济上的负担。
+
+              </p>
+            </div>
+          </div>
+
+          <div class="row mb-5 align-items-center clickable-row position-relative" onclick="location.href='ways'" style="cursor: pointer;">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-center mb-2 mb-md-0 position-relative" style="padding-right: 2rem;">
+              <h3 class="mb-2" style="color: #bf544f; font-weight: 800; font-size: 1.9rem; transform: translateY(7px);">我们的愿景</h3>
+              <div class="d-block d-md-none mx-auto" style="width: 100px; height: 2px; background-color: #a62323;"></div>
+              <div class="d-none d-md-block position-absolute top-0" style="width: 6px; height: 100%; background-color: #a62323; right: 5rem;"></div>
+            </div>
+            <div class="col-md-8 ps-md-4">
+              <p class="mb-0 text-muted fs-5 lh-base">
+                减少中国偏远地区女生的经期贫困与经期耻辱，消除与月经相关的教育障碍。
+              </p>
+            </div>
+          </div>
+
+          <div class="row align-items-center clickable-row position-relative" onclick="location.href='timeline'" style="cursor: pointer;">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-center mb-2 mb-md-0 position-relative" style="padding-right: 2rem;">
+              <h3 class="mb-2" style="color: #bf544f; font-weight: 800; font-size: 1.9rem; transform: translateY(7px);">我们的方法</h3>
+              <div class="d-block d-md-none mx-auto" style="width: 100px; height: 2px; background-color: #a62323;"></div>
+              <div class="d-none d-md-block position-absolute top-0" style="width: 6px; height: 100%; background-color: #a62323; right: 5rem;"></div>
+            </div>
+            <div class="col-md-8 ps-md-4">
+              <p class="mb-0 text-muted fs-5 lh-base">
+                提供经期用品，普及卫生教育，包括卫生用品的使用以及月经知识，以此缓解乃至消除经期耻辱。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- TESTIMONIALS SECTION-->
+      <section class="py-5 bg-pentagon" style="border-top: 3px solid #bf544f;">
+        <div class="container py-4">
+          <header class="mb-5">
+            <h2 style="color: #878787;" class="lined lined-center mb-4">2023年8月至今，我们已经···</h2>
+          </header>
+
+          <div class="row text-center justify-content-center">
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">成员</p>
+              <h2 id="count1" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">人</p>
+            </div>
+
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">义卖与活动</p>
+              <h2 id="count2" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">场</p>
+            </div>
+
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">帮助</p>
+              <h2 id="count3" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">人</p>
+            </div>
+
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">合作企业</p>
+              <h2 id="count4" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">家</p>
+            </div>
+
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">捐资</p>
+              <h2 id="count5" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">元</p>
+            </div>
+
+            <div class="col-md-4 mb-5 d-flex justify-content-center align-items-end">
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">捐物</p>
+              <h2 id="count6" class="mb-0 me-3 fw-bold" style="color: #bf544f; font-size: 4.5rem; line-height: 1;">0</h2>
+              <p class="mb-0 me-3 cn-text" style="color: #c98b89; font-size: 2.5rem;">件</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- JavaScript files-->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="/js/theme.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;900&display=swap" rel="stylesheet">
+
+    <script>
+      function dynamicNumberChange(id, start, end, duration, showPlus = false) {
+        const step = (end - start) / (duration / 30); // 每 30ms 更新一次更顺滑
+        let current = start;
+
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.innerText = start; // 重置初始值
+
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= end) {
+            clearInterval(timer);
+            current = end;
+            el.innerText = end + (showPlus ? "+" : ""); // 最后加号出现
+          } else {
+            el.innerText = Math.floor(current);
+          }
+        }, 30);
+      }
+
+      // 设置每个计数器的目标值 & 时长
+      const counters = [
+        { id: "count1", end: 80, duration: 900, plus: true },     // 成员 50+
+        { id: "count2", end: 12, duration: 600, plus: false },    // 活动 12
+        { id: "count3", end: 500, duration: 1000, plus: true },   // 帮助 500+
+        { id: "count4", end: 10, duration: 600, plus: true },     // 企业 10+
+        { id: "count5", end: 26769, duration: 1300, plus: false },// 捐资 26769
+        { id: "count6", end: 35000, duration: 1500, plus: true }  // 捐物 35000+
+      ];
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const counter = counters.find(c => c.id === entry.target.id);
+              if (counter) {
+                dynamicNumberChange(counter.id, 0, counter.end, counter.duration, counter.plus);
+              }
+            }
+          });
+        }, observerOptions);
+
+        counters.forEach(counter => {
+          const el = document.getElementById(counter.id);
+          if (el) {
+            observer.observe(el);
+          }
+        });
+      });
+    </script>
+
+
+
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('icons/orion-svg-sprite.svg'); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

@@ -1,0 +1,135 @@
+/* your styles go here */
+.icon-link {
+    text-decoration: none !important; /* 去除链接的下划线 */
+}
+:root {
+  --bs-link-color: #bf544f;
+  --bs-link-color-rgb: 191, 84, 79;
+  --bs-link-hover-color: #a13f3a;
+  --bs-link-hover-color-rgb: 161, 63, 58;
+}
+.bg-red {
+  background: url("../img/texture-red.png") center center repeat;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.map-image {
+  width: 100%;
+  height: auto;
+  max-width: none; /* 取消浏览器对 SVG 的默认上限 */
+  display: block;
+}
+
+/* 英文衬线 */
+.en-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.en-text-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* 中文衬线 */
+.cn-text {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+}
+
+.cn-text-neibu {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; /* 黑体为主 */
+  font-weight: 900; /* 超粗体 */
+  font-size: 4rem; /* 字体加大 */
+  letter-spacing: 0.1em; /* 增加字间距 */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.make-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1050; /* 保证高于地图 */
+    }
+
+    /* heading breadcrumb */
+    .bg-red {
+      background-color: #bf544f;
+      color: white;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* map container */
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 618px;
+    }
+
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-marker {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .map-marker:hover {
+      transform: translate(-50%, -50%) scale(1.3);
+    }
+
+    .marker-icon {
+      width: 20px;
+      height: 30px;
+    }
+
+    /* info box */
+    .info-box {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      pointer-events: none;
+      width: 120px;
+      z-index: 2000; /* 高于 navbar */
+      text-align: center;
+    }
+
+    .info-box img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .info-box .title {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #bf544f;
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+
+    .info-box .name {
+      font-size: 0.95rem;
+      color: #221e1e;
+      text-decoration: none;
+    }
+
+    .info-box .title:hover,
+    .info-box .name:hover {
+      text-decoration: underline;
+    }
