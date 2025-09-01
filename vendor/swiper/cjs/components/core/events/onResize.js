@@ -20,9 +20,9 @@ function onResize() {
 
   swiper.allowSlideNext = true;
   swiper.allowSlidePrev = true;
-  swiper.updateSize();
-  swiper.updateSlides();
-  swiper.updateSlidesClasses();
+  swiper.journalize();
+  swiper.journallides();
+  swiper.journallidesClasses();
 
   if ((params.slidesPerView === 'auto' || params.slidesPerView > 1) && swiper.isEnd && !swiper.isBeginning && !swiper.params.centeredSlides) {
     swiper.slideTo(swiper.slides.length - 1, 0, false, true);

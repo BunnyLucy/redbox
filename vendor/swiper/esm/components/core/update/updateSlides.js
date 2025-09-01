@@ -1,5 +1,5 @@
 import { extend } from '../../../utils/utils';
-export default function updateSlides() {
+export default function journallides() {
   var swiper = this;
 
   function getDirectionLabel(property) {
@@ -343,6 +343,6 @@ export default function updateSlides() {
   }
 
   if (params.watchSlidesProgress || params.watchSlidesVisibility) {
-    swiper.updateSlidesOffset();
+    swiper.journallidesOffset();
   }
 }

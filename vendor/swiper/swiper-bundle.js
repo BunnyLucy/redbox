@@ -1813,7 +1813,7 @@
     }
   };
 
-  function updateSize() {
+  function journalize() {
     var swiper = this;
     var width;
     var height;
@@ -1847,7 +1847,7 @@
     });
   }
 
-  function updateSlides() {
+  function journallides() {
     var swiper = this;
 
     function getDirectionLabel(property) {
@@ -2191,7 +2191,7 @@
     }
 
     if (params.watchSlidesProgress || params.watchSlidesVisibility) {
-      swiper.updateSlidesOffset();
+      swiper.journallidesOffset();
     }
   }
 
@@ -2247,7 +2247,7 @@
     if (newHeight) swiper.$wrapperEl.css('height', newHeight + "px");
   }
 
-  function updateSlidesOffset() {
+  function journallidesOffset() {
     var swiper = this;
     var slides = swiper.slides;
 
@@ -2256,7 +2256,7 @@
     }
   }
 
-  function updateSlidesProgress(translate) {
+  function journallidesProgress(translate) {
     if (translate === void 0) {
       translate = this && this.translate || 0;
     }
@@ -2266,7 +2266,7 @@
     var slides = swiper.slides,
         rtl = swiper.rtlTranslate;
     if (slides.length === 0) return;
-    if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.updateSlidesOffset();
+    if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.journallidesOffset();
     var offsetCenter = -translate;
     if (rtl) offsetCenter = translate; // Visible Slides
 
@@ -2328,7 +2328,7 @@
       isBeginning: isBeginning,
       isEnd: isEnd
     });
-    if (params.watchSlidesProgress || params.watchSlidesVisibility || params.centeredSlides && params.autoHeight) swiper.updateSlidesProgress(translate);
+    if (params.watchSlidesProgress || params.watchSlidesVisibility || params.centeredSlides && params.autoHeight) swiper.journallidesProgress(translate);
 
     if (isBeginning && !wasBeginning) {
       swiper.emit('reachBeginning toEdge');
@@ -2345,7 +2345,7 @@
     swiper.emit('progress', progress);
   }
 
-  function updateSlidesClasses() {
+  function journallidesClasses() {
     var swiper = this;
     var slides = swiper.slides,
         params = swiper.params,
@@ -2514,13 +2514,13 @@
   }
 
   var update = {
-    updateSize: updateSize,
-    updateSlides: updateSlides,
+    journalize: journalize,
+    journallides: journallides,
     updateAutoHeight: updateAutoHeight,
-    updateSlidesOffset: updateSlidesOffset,
-    updateSlidesProgress: updateSlidesProgress,
+    journallidesOffset: journallidesOffset,
+    journallidesProgress: journallidesProgress,
     updateProgress: updateProgress,
-    updateSlidesClasses: updateSlidesClasses,
+    journallidesClasses: journallidesClasses,
     updateActiveIndex: updateActiveIndex,
     updateClickedSlide: updateClickedSlide
   };
@@ -2904,7 +2904,7 @@
         swiper.updateAutoHeight();
       }
 
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
 
       if (params.effect !== 'slide') {
         swiper.setTranslate(translate);
@@ -2946,7 +2946,7 @@
       swiper.setTransition(0);
       swiper.setTranslate(translate);
       swiper.updateActiveIndex(slideIndex);
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
       swiper.emit('beforeTransitionStart', speed, internal);
       swiper.transitionStart(runCallbacks, direction);
       swiper.transitionEnd(runCallbacks, direction);
@@ -2954,7 +2954,7 @@
       swiper.setTransition(speed);
       swiper.setTranslate(translate);
       swiper.updateActiveIndex(slideIndex);
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
       swiper.emit('beforeTransitionStart', speed, internal);
       swiper.transitionStart(runCallbacks, direction);
 
@@ -3601,7 +3601,7 @@
     touches.startY = startY;
     data.touchStartTime = now();
     swiper.allowClick = true;
-    swiper.updateSize();
+    swiper.journalize();
     swiper.swipeDirection = undefined;
     if (params.threshold > 0) data.allowThresholdMove = false;
 
@@ -3828,7 +3828,7 @@
 
     if (params.freeMode || params.watchSlidesProgress || params.watchSlidesVisibility) {
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     }
 
     if (params.freeMode) {
@@ -4098,7 +4098,7 @@
         }
 
         swiper.updateActiveIndex();
-        swiper.updateSlidesClasses();
+        swiper.journallidesClasses();
       } else if (params.freeModeSticky) {
         swiper.slideToClosest();
         return;
@@ -4109,7 +4109,7 @@
       if (!params.freeModeMomentum || timeDiff >= params.longSwipesMs) {
         swiper.updateProgress();
         swiper.updateActiveIndex();
-        swiper.updateSlidesClasses();
+        swiper.journallidesClasses();
       }
 
       return;
@@ -4193,9 +4193,9 @@
 
     swiper.allowSlideNext = true;
     swiper.allowSlidePrev = true;
-    swiper.updateSize();
-    swiper.updateSlides();
-    swiper.updateSlidesClasses();
+    swiper.journalize();
+    swiper.journallides();
+    swiper.journallidesClasses();
 
     if ((params.slidesPerView === 'auto' || params.slidesPerView > 1) && swiper.isEnd && !swiper.isBeginning && !swiper.params.centeredSlides) {
       swiper.slideTo(swiper.slides.length - 1, 0, false, true);
@@ -4251,7 +4251,7 @@
 
     if (swiper.translate === -0) swiper.translate = 0;
     swiper.updateActiveIndex();
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
     var newProgress;
     var translatesDiff = swiper.maxTranslate() - swiper.minTranslate();
 
@@ -4473,7 +4473,7 @@
     if (needsReLoop && initialized) {
       swiper.loopDestroy();
       swiper.loopCreate();
-      swiper.updateSlides();
+      swiper.journallides();
       swiper.slideTo(activeIndex - loopedSlides + swiper.loopedSlides, 0, false);
     }
 
@@ -5063,7 +5063,7 @@
       var current = (max - min) * progress + min;
       swiper.translateTo(current, typeof speed === 'undefined' ? 0 : speed);
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     };
 
     _proto.emitContainerClasses = function emitContainerClasses() {
@@ -5085,16 +5085,16 @@
     _proto.emitSlidesClasses = function emitSlidesClasses() {
       var swiper = this;
       if (!swiper.params._emitClasses || !swiper.el) return;
-      var updates = [];
+      var journal = [];
       swiper.slides.each(function (slideEl) {
         var classNames = swiper.getSlideClasses(slideEl);
-        updates.push({
+        journal.push({
           slideEl: slideEl,
           classNames: classNames
         });
         swiper.emit('_slideClass', slideEl, classNames);
       });
-      swiper.emit('_slideClasses', updates);
+      swiper.emit('_slideClasses', journal);
     };
 
     _proto.slidesPerViewDynamic = function slidesPerViewDynamic() {
@@ -5146,17 +5146,17 @@
         swiper.setBreakpoint();
       }
 
-      swiper.updateSize();
-      swiper.updateSlides();
+      swiper.journalize();
+      swiper.journallides();
       swiper.updateProgress();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
 
       function setTranslate() {
         var translateValue = swiper.rtlTranslate ? swiper.translate * -1 : swiper.translate;
         var newTranslate = Math.min(Math.max(translateValue, swiper.maxTranslate()), swiper.minTranslate());
         swiper.setTranslate(newTranslate);
         swiper.updateActiveIndex();
-        swiper.updateSlidesClasses();
+        swiper.journallidesClasses();
       }
 
       var translated;
@@ -5296,9 +5296,9 @@
       } // Update size
 
 
-      swiper.updateSize(); // Update slides
+      swiper.journalize(); // Update slides
 
-      swiper.updateSlides();
+      swiper.journallides();
 
       if (swiper.params.watchOverflow) {
         swiper.checkOverflow();
@@ -5472,9 +5472,9 @@
       });
 
       function onRendered() {
-        swiper.updateSlides();
+        swiper.journallides();
         swiper.updateProgress();
-        swiper.updateSlidesClasses();
+        swiper.journallidesClasses();
 
         if (swiper.lazy && swiper.params.lazy.enabled) {
           swiper.lazy.load();
@@ -6060,10 +6060,10 @@
           swiper.setTranslate(position);
           swiper.updateProgress();
           swiper.updateActiveIndex();
-          swiper.updateSlidesClasses();
+          swiper.journallidesClasses();
 
           if (!wasBeginning && swiper.isBeginning || !wasEnd && swiper.isEnd) {
-            swiper.updateSlidesClasses();
+            swiper.journallidesClasses();
           }
 
           if (swiper.params.freeModeSticky) {
@@ -6924,7 +6924,7 @@
       if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
       swiper.scrollbar.$dragEl.transition(duration);
     },
-    updateSize: function updateSize() {
+    journalize: function journalize() {
       var swiper = this;
       if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
       var scrollbar = swiper.scrollbar;
@@ -6999,7 +6999,7 @@
       swiper.updateProgress(position);
       swiper.setTranslate(position);
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     },
     onDragStart: function onDragStart(e) {
       var swiper = this;
@@ -7200,17 +7200,17 @@
     on: {
       init: function init(swiper) {
         swiper.scrollbar.init();
-        swiper.scrollbar.updateSize();
+        swiper.scrollbar.journalize();
         swiper.scrollbar.setTranslate();
       },
       update: function update(swiper) {
-        swiper.scrollbar.updateSize();
+        swiper.scrollbar.journalize();
       },
       resize: function resize(swiper) {
-        swiper.scrollbar.updateSize();
+        swiper.scrollbar.journalize();
       },
       observerUpdate: function observerUpdate(swiper) {
-        swiper.scrollbar.updateSize();
+        swiper.scrollbar.journalize();
       },
       setTranslate: function setTranslate(swiper) {
         swiper.scrollbar.setTranslate();
@@ -8300,7 +8300,7 @@
         c.updateProgress(controlledTranslate);
         c.setTranslate(controlledTranslate, swiper);
         c.updateActiveIndex();
-        c.updateSlidesClasses();
+        c.journallidesClasses();
       }
 
       if (Array.isArray(controlled)) {

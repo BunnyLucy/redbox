@@ -1,5 +1,5 @@
 import $ from '../../../utils/dom';
-export default function updateSlidesProgress(translate) {
+export default function journallidesProgress(translate) {
   if (translate === void 0) {
     translate = this && this.translate || 0;
   }
@@ -9,7 +9,7 @@ export default function updateSlidesProgress(translate) {
   var slides = swiper.slides,
       rtl = swiper.rtlTranslate;
   if (slides.length === 0) return;
-  if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.updateSlidesOffset();
+  if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.journallidesOffset();
   var offsetCenter = -translate;
   if (rtl) offsetCenter = translate; // Visible Slides
 

@@ -88,7 +88,7 @@ var Controller = {
       c.updateProgress(controlledTranslate);
       c.setTranslate(controlledTranslate, swiper);
       c.updateActiveIndex();
-      c.updateSlidesClasses();
+      c.journallidesClasses();
     }
 
     if (Array.isArray(controlled)) {

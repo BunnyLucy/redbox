@@ -18,15 +18,15 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="/css/custom.css">
     <!-- Favicon and apple touch icons-->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/apple-touch-icon-152x152.png">
 
     <!-- 引入 Playfair Display（英文） + Noto Serif SC（中文） -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -41,14 +41,16 @@
       <header class="nav-holder make-sticky">
         <div class="navbar navbar-light bg-white navbar-expand-lg py-0" id="navbar">
           <div class="container py-3 py-lg-0 px-lg-0">
-            <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img class="d-none d-md-inline-block" src="/img/logo.png" alt="logo"><img class="d-inline-block d-md-none" src="/img/logo-small.png" alt="Universal logo"><span class="sr-only">Universal - go to homepage</span></a>
+            <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img class="d-none d-md-inline-block" src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/logo.png" alt="logo"><img class="d-inline-block d-md-none" src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/logo-small.png" alt="Universal logo"><span class="sr-only">Universal - go to homepage</span></a>
             <!-- Navbar toggler-->
             <button class="navbar-toggler text-primary border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navigationCollapse" aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="sr-only">Toggle navigation</span><i class="fas fa-align-justify"></i></button>
             <!-- Collapsed Navigation    -->
             <div class="collapse navbar-collapse" id="navigationCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown"><a class="nav-link" href="index.html">首頁</a>
+                </li>
                 <!-- homepage dropdown-->
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我們是誰</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" aria-expanded="false">我們是誰</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
                     <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">總覽</a></li>
                     <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zxt.html">主席團</a></li>
@@ -61,7 +63,7 @@
                   <ul class="dropdown-menu megamenu p-4" aria-labelledby="featuresMegamenu">
                     <li>
                       <div class="row">
-                        <div class="col-lg-6"><img class="d-none d-lg-block" src="/img/template-mac.avif" alt="" style="width:100%; height:300px; object-fit:cover;"></div>
+                        <div class="col-lg-6"><img class="d-none d-lg-block" src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/template-mac.avif" alt="" style="width:100%; height:300px; object-fit:cover;"></div>
                         <div class="col-lg-3 col-md-6">
                           <h5 class="text-dark text-uppercase pb-2 border-bottom">總覽</h5>
                           <ul class="list-unstyled mb-3">
@@ -82,28 +84,50 @@
                   </ul>
                 </li>
                 <!-- megamenu [portfolio]-->
-                <li class="nav-item dropdown menu-large"><a class="nav-link dropdown-toggle" id="portfolioMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">雜誌</a>
+                <li class="nav-item dropdown menu-large">
+                  <a class="nav-link dropdown-toggle" id="portfolioMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">動態</a>
                   <ul class="dropdown-menu megamenu p-4" aria-labelledby="portfolioMegamenu">
                     <li>
                       <div class="row">
-                        <div class="col-lg-6"><img class="img-fluid d-none d-lg-block" src="/img/menupic.avif" alt=""></div>
-                        <div class="col-lg-3 col-md-6">
-                          <h5 class="text-dark text-uppercase pb-2 border-bottom">圖片牆</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2025.html">2025年</a></li>
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2024.html">2024年</a></li>
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2023.html">2023年</a></li>
-                          </ul>
+                        <!-- 左侧图片 -->
+                        <div class="col-lg-6 d-none d-lg-block">
+                          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/menupic.avif" alt="">
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                          <h5 class="text-dark text-uppercase pb-2 border-bottom">報道文章</h5>
-                          <ul class="list-unstyled mb-3">
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/Cby7a9WhzMU4dLygqX-CTQ">《與Red box一起，看見女孩生理健康需求》</a></li>
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/4BjENzspUxSld6Ge5FrR5w">《Red Box “關愛每一位她”》</a></li>
-                            <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/n3meWjMab6jASq5W47GJ2Q">《點亮未來，傳遞愛的力量！MKBS愛心義賣活動圓滿收攤》</a></li>
-                          </ul>
-                        </div>
-                      </div>
+
+                        <!-- 右侧文字内容 -->
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <!-- 第一行：图片墙 + 报道文章 -->
+                            <div class="col-lg-6 col-md-6">
+                              <h5 class="text-dark text-uppercase pb-2 border-bottom">圖片牆</h5>
+                              <ul class="list-unstyled mb-3">
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2025.html">2025年</a></li>
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2024.html">2024年</a></li>
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="gallery2023.html">2023年</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                              <h5 class="text-dark text-uppercase pb-2 border-bottom">報道文章</h5>
+                              <ul class="list-unstyled mb-3">
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/Cby7a9WhzMU4dLygqX-CTQ" target="_blank">《與Red box一起，看見女孩生理健康需求》</a></li>
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/4BjENzspUxSld6Ge5FrR5w" target="_blank">《Red Box “關愛每一位她”》</a></li>
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://mp.weixin.qq.com/s/n3meWjMab6jASq5W47GJ2Q" target="_blank">《點亮未來，傳遞愛的力量！MKBS愛心義賣活動圓滿收攤》</a></li>
+                              </ul>
+                            </div>
+
+                            <!-- 第二行：捐赠文件下载 -->
+                            <div class="col-12">
+                              <h5 class="text-dark text-uppercase pb-2 border-bottom">捐贈接收函下載</h5>
+                              <ul class="list-unstyled mb-3">
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/file/Red Box第一次&第二次捐赠物资接收函.pdf" download>Red Box第一次&第二次捐贈物資接收函</a></li>
+                                <li class="nav-item"><a class="nav-link-sub py-2 text-uppercase" href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/file/Red Box第三次捐赠物资接收函.pdf" download>Red Box第三次捐贈物資接收函</a></li>
+                              </ul>
+                            </div>
+
+                          </div> <!-- /内层row -->
+                        </div> <!-- /右侧 col-lg-6 -->
+                      </div> <!-- /外层row -->
                     </li>
                   </ul>
                 </li>
@@ -120,8 +144,9 @@
                     </li>
                   </ul>
                 </li>
+                <li class="nav-item dropdown"><a class="nav-link" href="join.html">加入我們</a></li>
                 <!-- dropdown menu [contact]-->
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切换语言</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切換語言 switch language</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
                     <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2025.html">简体中文</a></li>
                     <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2025.html">繁體中文</a></li>
@@ -211,8 +236,8 @@
                     div.className = "photo-item";
 
                     div.innerHTML = `
-                      <a href="/img/${year}/${i}.avif" data-lightbox="gallery${year}" data-title="${year} 活動照片 ${i}">
-                        <img src="/img/${year}/${i}.avif" alt="pic${i}">
+                      <a href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" data-lightbox="gallery${year}" data-title="${year} 活動照片 ${i}">
+                        <img src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" alt="pic${i}">
                       </a>
                     `;
 

@@ -5,7 +5,7 @@ import { needsScrollbar, needsNavigation, needsPagination, uniqueClasses, extend
 import { renderLoop, calcLoopedSlides } from './loop';
 import { getChangedParams } from './get-changed-params';
 import { getChildren } from './get-children';
-import { updateSwiper } from './update-swiper';
+import { journalwiper } from './update-swiper';
 import { renderVirtual, updateOnVirtualData } from './virtual';
 var Swiper = {
   name: 'Swiper',
@@ -573,7 +573,7 @@ var Swiper = {
       oldPassedParamsRef.value = newPassedParams;
 
       if ((changedParams.length || breakpointChanged.value) && swiperRef.value && !swiperRef.value.destroyed) {
-        updateSwiper({
+        journalwiper({
           swiper: swiperRef.value,
           slides: slidesRef.value,
           passedParams: newPassedParams,

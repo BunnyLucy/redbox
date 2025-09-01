@@ -24,7 +24,7 @@ function onScroll() {
 
   if (swiper.translate === -0) swiper.translate = 0;
   swiper.updateActiveIndex();
-  swiper.updateSlidesClasses();
+  swiper.journallidesClasses();
   var newProgress;
   var translatesDiff = swiper.maxTranslate() - swiper.minTranslate();
 

@@ -245,7 +245,7 @@ export default function onTouchEnd(event) {
       }
 
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     } else if (params.freeModeSticky) {
       swiper.slideToClosest();
       return;
@@ -256,7 +256,7 @@ export default function onTouchEnd(event) {
     if (!params.freeModeMomentum || timeDiff >= params.longSwipesMs) {
       swiper.updateProgress();
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     }
 
     return;

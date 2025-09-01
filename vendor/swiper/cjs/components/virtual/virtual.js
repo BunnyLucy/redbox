@@ -54,9 +54,9 @@ var Virtual = {
     });
 
     function onRendered() {
-      swiper.updateSlides();
+      swiper.journallides();
       swiper.updateProgress();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
 
       if (swiper.lazy && swiper.params.lazy.enabled) {
         swiper.lazy.load();

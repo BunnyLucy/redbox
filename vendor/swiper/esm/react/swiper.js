@@ -11,7 +11,7 @@ import { needsScrollbar, needsNavigation, needsPagination, uniqueClasses, extend
 import { renderLoop, calcLoopedSlides } from './loop';
 import { getChangedParams } from './get-changed-params';
 import { getChildren } from './get-children';
-import { updateSwiper } from './update-swiper';
+import { journalwiper } from './update-swiper';
 import { renderVirtual, updateOnVirtualData } from './virtual';
 import { useIsomorphicLayoutEffect } from './use-isomorphic-layout-effect';
 var Swiper = /*#__PURE__*/forwardRef(function (_temp, externalElRef) {
@@ -157,7 +157,7 @@ var Swiper = /*#__PURE__*/forwardRef(function (_temp, externalElRef) {
     oldSlides.current = slides;
 
     if (changedParams.length && swiperRef.current && !swiperRef.current.destroyed) {
-      updateSwiper({
+      journalwiper({
         swiper: swiperRef.current,
         slides: slides,
         passedParams: passedParams,

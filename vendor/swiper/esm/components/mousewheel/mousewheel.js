@@ -236,10 +236,10 @@ var Mousewheel = {
         swiper.setTranslate(position);
         swiper.updateProgress();
         swiper.updateActiveIndex();
-        swiper.updateSlidesClasses();
+        swiper.journallidesClasses();
 
         if (!wasBeginning && swiper.isBeginning || !wasEnd && swiper.isEnd) {
-          swiper.updateSlidesClasses();
+          swiper.journallidesClasses();
         }
 
         if (swiper.params.freeModeSticky) {

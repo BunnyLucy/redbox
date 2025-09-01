@@ -1,4 +1,4 @@
-export default function updateSlidesClasses() {
+export default function journallidesClasses() {
   var swiper = this;
   var slides = swiper.slides,
       params = swiper.params,

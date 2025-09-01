@@ -17,7 +17,7 @@ var _getChangedParams = require("./get-changed-params");
 
 var _getChildren2 = require("./get-children");
 
-var _updateSwiper = require("./update-swiper");
+var _journalwiper = require("./update-swiper");
 
 var _virtual = require("./virtual");
 
@@ -587,7 +587,7 @@ var Swiper = {
       oldPassedParamsRef.value = newPassedParams;
 
       if ((changedParams.length || breakpointChanged.value) && swiperRef.value && !swiperRef.value.destroyed) {
-        (0, _updateSwiper.updateSwiper)({
+        (0, _journalwiper.journalwiper)({
           swiper: swiperRef.value,
           slides: slidesRef.value,
           passedParams: newPassedParams,

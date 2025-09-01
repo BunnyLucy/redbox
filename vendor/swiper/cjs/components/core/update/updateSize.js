@@ -1,11 +1,11 @@
 "use strict";
 
 exports.__esModule = true;
-exports.default = updateSize;
+exports.default = journalize;
 
 var _utils = require("../../../utils/utils");
 
-function updateSize() {
+function journalize() {
   var swiper = this;
   var width;
   var height;

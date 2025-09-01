@@ -306,7 +306,7 @@ var Swiper = /*#__PURE__*/function () {
     var current = (max - min) * progress + min;
     swiper.translateTo(current, typeof speed === 'undefined' ? 0 : speed);
     swiper.updateActiveIndex();
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
   };
 
   _proto.emitContainerClasses = function emitContainerClasses() {
@@ -328,16 +328,16 @@ var Swiper = /*#__PURE__*/function () {
   _proto.emitSlidesClasses = function emitSlidesClasses() {
     var swiper = this;
     if (!swiper.params._emitClasses || !swiper.el) return;
-    var updates = [];
+    var journal = [];
     swiper.slides.each(function (slideEl) {
       var classNames = swiper.getSlideClasses(slideEl);
-      updates.push({
+      journal.push({
         slideEl: slideEl,
         classNames: classNames
       });
       swiper.emit('_slideClass', slideEl, classNames);
     });
-    swiper.emit('_slideClasses', updates);
+    swiper.emit('_slideClasses', journal);
   };
 
   _proto.slidesPerViewDynamic = function slidesPerViewDynamic() {
@@ -389,17 +389,17 @@ var Swiper = /*#__PURE__*/function () {
       swiper.setBreakpoint();
     }
 
-    swiper.updateSize();
-    swiper.updateSlides();
+    swiper.journalize();
+    swiper.journallides();
     swiper.updateProgress();
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
 
     function setTranslate() {
       var translateValue = swiper.rtlTranslate ? swiper.translate * -1 : swiper.translate;
       var newTranslate = Math.min(Math.max(translateValue, swiper.maxTranslate()), swiper.minTranslate());
       swiper.setTranslate(newTranslate);
       swiper.updateActiveIndex();
-      swiper.updateSlidesClasses();
+      swiper.journallidesClasses();
     }
 
     var translated;
@@ -539,9 +539,9 @@ var Swiper = /*#__PURE__*/function () {
     } // Update size
 
 
-    swiper.updateSize(); // Update slides
+    swiper.journalize(); // Update slides
 
-    swiper.updateSlides();
+    swiper.journallides();
 
     if (swiper.params.watchOverflow) {
       swiper.checkOverflow();

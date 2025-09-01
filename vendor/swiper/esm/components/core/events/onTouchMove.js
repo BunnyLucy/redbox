@@ -206,7 +206,7 @@ export default function onTouchMove(event) {
 
   if (params.freeMode || params.watchSlidesProgress || params.watchSlidesVisibility) {
     swiper.updateActiveIndex();
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
   }
 
   if (params.freeMode) {

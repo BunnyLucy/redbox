@@ -1,11 +1,11 @@
 "use strict";
 
 exports.__esModule = true;
-exports.default = updateSlides;
+exports.default = journallides;
 
 var _utils = require("../../../utils/utils");
 
-function updateSlides() {
+function journallides() {
   var swiper = this;
 
   function getDirectionLabel(property) {
@@ -349,6 +349,6 @@ function updateSlides() {
   }
 
   if (params.watchSlidesProgress || params.watchSlidesVisibility) {
-    swiper.updateSlidesOffset();
+    swiper.journallidesOffset();
   }
 }

@@ -1,9 +1,9 @@
 "use strict";
 
 exports.__esModule = true;
-exports.default = updateSlidesClasses;
+exports.default = journallidesClasses;
 
-function updateSlidesClasses() {
+function journallidesClasses() {
   var swiper = this;
   var slides = swiper.slides,
       params = swiper.params,

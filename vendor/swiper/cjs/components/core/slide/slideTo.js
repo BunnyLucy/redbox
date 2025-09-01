@@ -110,7 +110,7 @@ function slideTo(index, speed, runCallbacks, internal, initial) {
       swiper.updateAutoHeight();
     }
 
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
 
     if (params.effect !== 'slide') {
       swiper.setTranslate(translate);
@@ -152,7 +152,7 @@ function slideTo(index, speed, runCallbacks, internal, initial) {
     swiper.setTransition(0);
     swiper.setTranslate(translate);
     swiper.updateActiveIndex(slideIndex);
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
     swiper.emit('beforeTransitionStart', speed, internal);
     swiper.transitionStart(runCallbacks, direction);
     swiper.transitionEnd(runCallbacks, direction);
@@ -160,7 +160,7 @@ function slideTo(index, speed, runCallbacks, internal, initial) {
     swiper.setTransition(speed);
     swiper.setTranslate(translate);
     swiper.updateActiveIndex(slideIndex);
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
     swiper.emit('beforeTransitionStart', speed, internal);
     swiper.transitionStart(runCallbacks, direction);
 

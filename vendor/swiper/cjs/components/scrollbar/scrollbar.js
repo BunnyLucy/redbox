@@ -66,7 +66,7 @@ var Scrollbar = {
     if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
     swiper.scrollbar.$dragEl.transition(duration);
   },
-  updateSize: function updateSize() {
+  journalize: function journalize() {
     var swiper = this;
     if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
     var scrollbar = swiper.scrollbar;
@@ -141,7 +141,7 @@ var Scrollbar = {
     swiper.updateProgress(position);
     swiper.setTranslate(position);
     swiper.updateActiveIndex();
-    swiper.updateSlidesClasses();
+    swiper.journallidesClasses();
   },
   onDragStart: function onDragStart(e) {
     var swiper = this;
@@ -342,17 +342,17 @@ var _default = {
   on: {
     init: function init(swiper) {
       swiper.scrollbar.init();
-      swiper.scrollbar.updateSize();
+      swiper.scrollbar.journalize();
       swiper.scrollbar.setTranslate();
     },
     update: function update(swiper) {
-      swiper.scrollbar.updateSize();
+      swiper.scrollbar.journalize();
     },
     resize: function resize(swiper) {
-      swiper.scrollbar.updateSize();
+      swiper.scrollbar.journalize();
     },
     observerUpdate: function observerUpdate(swiper) {
-      swiper.scrollbar.updateSize();
+      swiper.scrollbar.journalize();
     },
     setTranslate: function setTranslate(swiper) {
       swiper.scrollbar.setTranslate();

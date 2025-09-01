@@ -3,19 +3,19 @@
 exports.__esModule = true;
 exports.default = void 0;
 
-var _updateSize = _interopRequireDefault(require("./updateSize"));
+var _journalize = _interopRequireDefault(require("./journalize"));
 
-var _updateSlides = _interopRequireDefault(require("./updateSlides"));
+var _journallides = _interopRequireDefault(require("./journallides"));
 
 var _updateAutoHeight = _interopRequireDefault(require("./updateAutoHeight"));
 
-var _updateSlidesOffset = _interopRequireDefault(require("./updateSlidesOffset"));
+var _journallidesOffset = _interopRequireDefault(require("./journallidesOffset"));
 
-var _updateSlidesProgress = _interopRequireDefault(require("./updateSlidesProgress"));
+var _journallidesProgress = _interopRequireDefault(require("./journallidesProgress"));
 
 var _updateProgress = _interopRequireDefault(require("./updateProgress"));
 
-var _updateSlidesClasses = _interopRequireDefault(require("./updateSlidesClasses"));
+var _journallidesClasses = _interopRequireDefault(require("./journallidesClasses"));
 
 var _updateActiveIndex = _interopRequireDefault(require("./updateActiveIndex"));
 
@@ -24,13 +24,13 @@ var _updateClickedSlide = _interopRequireDefault(require("./updateClickedSlide")
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  updateSize: _updateSize.default,
-  updateSlides: _updateSlides.default,
+  journalize: _journalize.default,
+  journallides: _journallides.default,
   updateAutoHeight: _updateAutoHeight.default,
-  updateSlidesOffset: _updateSlidesOffset.default,
-  updateSlidesProgress: _updateSlidesProgress.default,
+  journallidesOffset: _journallidesOffset.default,
+  journallidesProgress: _journallidesProgress.default,
   updateProgress: _updateProgress.default,
-  updateSlidesClasses: _updateSlidesClasses.default,
+  journallidesClasses: _journallidesClasses.default,
   updateActiveIndex: _updateActiveIndex.default,
   updateClickedSlide: _updateClickedSlide.default
 };

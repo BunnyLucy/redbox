@@ -4,9 +4,9 @@ import { h } from 'vue';
 
 function updateOnVirtualData(swiper) {
   if (!swiper || swiper.destroyed || !swiper.params.virtual || swiper.params.virtual && !swiper.params.virtual.enabled) return;
-  swiper.updateSlides();
+  swiper.journallides();
   swiper.updateProgress();
-  swiper.updateSlidesClasses();
+  swiper.journallidesClasses();
 
   if (swiper.lazy && swiper.params.lazy.enabled) {
     swiper.lazy.load();

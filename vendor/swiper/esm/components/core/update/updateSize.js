@@ -1,5 +1,5 @@
 import { extend } from '../../../utils/utils';
-export default function updateSize() {
+export default function journalize() {
   var swiper = this;
   var width;
   var height;

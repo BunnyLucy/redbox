@@ -806,9 +806,9 @@
                     _this._changeDetectorRef.detectChanges();
                 });
                 _this._ngZone.runOutsideAngular(function () {
-                    _this.swiperRef.updateSlides();
+                    _this.swiperRef.journallides();
                     _this.swiperRef.updateProgress();
-                    _this.swiperRef.updateSlidesClasses();
+                    _this.swiperRef.journallidesClasses();
                     if (_this.swiperRef.lazy && _this.swiperRef.params.lazy['enabled']) {
                         _this.swiperRef.lazy.load();
                     }
@@ -891,7 +891,7 @@
         });
         Object.defineProperty(SwiperComponent.prototype, "config", {
             set: function (val) {
-                this.updateSwiper(val);
+                this.journalwiper(val);
                 var params = getParams(val).params;
                 Object.assign(this, params);
             },
@@ -1058,7 +1058,7 @@
             });
         };
         SwiperComponent.prototype.ngOnChanges = function (changedParams) {
-            this.updateSwiper(changedParams);
+            this.journalwiper(changedParams);
             this._changeDetectorRef.detectChanges();
         };
         SwiperComponent.prototype.updateInitSwiper = function (changedParams) {
@@ -1092,7 +1092,7 @@
                         !scrollbar.el) {
                         _this.updateParameter('scrollbar', _this.scrollbar);
                         scrollbar.init();
-                        scrollbar.updateSize();
+                        scrollbar.journalize();
                         scrollbar.setTranslate();
                     }
                     else {
@@ -1130,7 +1130,7 @@
                 _this.swiperRef.update();
             });
         };
-        SwiperComponent.prototype.updateSwiper = function (changedParams) {
+        SwiperComponent.prototype.journalwiper = function (changedParams) {
             var _this = this;
             this._ngZone.runOutsideAngular(function () {
                 var _a, _b;

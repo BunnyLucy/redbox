@@ -1,13 +1,13 @@
 "use strict";
 
 exports.__esModule = true;
-exports.default = updateSlidesProgress;
+exports.default = journallidesProgress;
 
 var _dom = _interopRequireDefault(require("../../../utils/dom"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function updateSlidesProgress(translate) {
+function journallidesProgress(translate) {
   if (translate === void 0) {
     translate = this && this.translate || 0;
   }
@@ -17,7 +17,7 @@ function updateSlidesProgress(translate) {
   var slides = swiper.slides,
       rtl = swiper.rtlTranslate;
   if (slides.length === 0) return;
-  if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.updateSlidesOffset();
+  if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.journallidesOffset();
   var offsetCenter = -translate;
   if (rtl) offsetCenter = translate; // Visible Slides
 

@@ -3655,7 +3655,7 @@
   	},
 
   	// @method invalidateSize(options: Zoom/pan options): this
-  	// Checks if the map container size changed and updates the map if so —
+  	// Checks if the map container size changed and journal the map if so —
   	// call it after you've changed the map size dynamically, also animating
   	// pan by default. If `options.pan` is `false`, panning will not occur.
   	// If `options.debounceMoveend` is `true`, it will delay `moveend` event so
@@ -3664,7 +3664,7 @@
 
   	// @alternative
   	// @method invalidateSize(animate: Boolean): this
-  	// Checks if the map container size changed and updates the map if so —
+  	// Checks if the map container size changed and journal the map if so —
   	// call it after you've changed the map size dynamically, also animating
   	// pan by default.
   	invalidateSize: function (options) {
@@ -5681,10 +5681,10 @@
   			map.containerPointToLatLng([0, y]),
   			map.containerPointToLatLng([this.options.maxWidth, y]));
 
-  		this._updateScales(maxMeters);
+  		this._journalcales(maxMeters);
   	},
 
-  	_updateScales: function (maxMeters) {
+  	_journalcales: function (maxMeters) {
   		if (this.options.metric && maxMeters) {
   			this._updateMetric(maxMeters);
   		}
@@ -5697,7 +5697,7 @@
   		var meters = this._getRoundNum(maxMeters),
   		    label = meters < 1000 ? meters + ' m' : (meters / 1000) + ' km';
 
-  		this._updateScale(this._mScale, label, meters / maxMeters);
+  		this._journalcale(this._mScale, label, meters / maxMeters);
   	},
 
   	_updateImperial: function (maxMeters) {
@@ -5707,15 +5707,15 @@
   		if (maxFeet > 5280) {
   			maxMiles = maxFeet / 5280;
   			miles = this._getRoundNum(maxMiles);
-  			this._updateScale(this._iScale, miles + ' mi', miles / maxMiles);
+  			this._journalcale(this._iScale, miles + ' mi', miles / maxMiles);
 
   		} else {
   			feet = this._getRoundNum(maxFeet);
-  			this._updateScale(this._iScale, feet + ' ft', feet / maxFeet);
+  			this._journalcale(this._iScale, feet + ' ft', feet / maxFeet);
   		}
   	},
 
-  	_updateScale: function (scale, text, ratio) {
+  	_journalcale: function (scale, text, ratio) {
   		scale.style.width = Math.round(this.options.maxWidth * ratio) + 'px';
   		scale.innerHTML = text;
   	},
@@ -8199,7 +8199,7 @@
   	setStyle: function (style) {
   		setOptions(this, style);
   		if (this._renderer) {
-  			this._renderer._updateStyle(this);
+  			this._renderer._journaltyle(this);
   			if (this.options.stroke && style && Object.prototype.hasOwnProperty.call(style, 'weight')) {
   				this._updateBounds();
   			}
@@ -9932,7 +9932,7 @@
   	},
 
   	// @method update: null
-  	// Updates the overlay content, layout and position. Useful for updating the overlay after something inside changed, e.g. image loaded.
+  	// journal the overlay content, layout and position. Useful for updating the overlay after something inside changed, e.g. image loaded.
   	update: function () {
   		if (!this._map) { return; }
 
@@ -12143,7 +12143,7 @@
   	},
 
   	// @method setUrl(url: String, noRedraw?: Boolean): this
-  	// Updates the layer's URL template and redraws it (unless `noRedraw` is set to `true`).
+  	// journal the layer's URL template and redraws it (unless `noRedraw` is set to `true`).
   	// If the URL does not change, the layer will not be redrawn unless
   	// the noRedraw parameter is set to false.
   	setUrl: function (url, noRedraw) {
@@ -12458,7 +12458,7 @@
    * Do not use this class directly, use `SVG` and `Canvas` instead.
    *
    * @event update: Event
-   * Fired when the renderer updates its bounds, center and zoom, for example when
+   * Fired when the renderer journal its bounds, center and zoom, for example when
    * its map has moved
    */
 
@@ -12617,7 +12617,7 @@
   	},
 
   	_onViewPreReset: function () {
-  		// Set a flag so that a viewprereset+moveend+viewreset only updates&redraws once
+  		// Set a flag so that a viewprereset+moveend+viewreset only journal&redraws once
   		this._postponeUpdatePaths = true;
   	},
 
@@ -12750,7 +12750,7 @@
   		this._requestRedraw(layer);
   	},
 
-  	_updateStyle: function (layer) {
+  	_journaltyle: function (layer) {
   		this._updateDashArray(layer);
   		this._requestRedraw(layer);
   	},
@@ -13106,7 +13106,7 @@
   		layer._path = vmlCreate('path');
   		container.appendChild(layer._path);
 
-  		this._updateStyle(layer);
+  		this._journaltyle(layer);
   		this._layers[stamp(layer)] = layer;
   	},
 
@@ -13126,7 +13126,7 @@
   		delete this._layers[stamp(layer)];
   	},
 
-  	_updateStyle: function (layer) {
+  	_journaltyle: function (layer) {
   		var stroke = layer._stroke,
   		    fill = layer._fill,
   		    options = layer.options,
@@ -13292,7 +13292,7 @@
   			addClass(path, 'leaflet-interactive');
   		}
 
-  		this._updateStyle(layer);
+  		this._journaltyle(layer);
   		this._layers[stamp(layer)] = layer;
   	},
 
@@ -13313,7 +13313,7 @@
   		layer._update();
   	},
 
-  	_updateStyle: function (layer) {
+  	_journaltyle: function (layer) {
   		var path = layer._path,
   		    options = layer.options;
 
@@ -14399,7 +14399,7 @@
   		off(document, 'touchmove', this._onTouchMove, this);
   		off(document, 'touchend touchcancel', this._onTouchEnd, this);
 
-  		// Pinch updates GridLayers' levels only when zoomSnap is off, so zoomSnap becomes noUpdate.
+  		// Pinch journal GridLayers' levels only when zoomSnap is off, so zoomSnap becomes noUpdate.
   		if (this._map.options.zoomAnimation) {
   			this._map._animateZoom(this._center, this._map._limitZoom(this._zoom), true, this._map.options.zoomSnap);
   		} else {

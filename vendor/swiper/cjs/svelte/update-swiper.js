@@ -1,11 +1,11 @@
 "use strict";
 
 exports.__esModule = true;
-exports.updateSwiper = updateSwiper;
+exports.journalwiper = journalwiper;
 
 var _utils = require("./utils");
 
-function updateSwiper(_ref) {
+function journalwiper(_ref) {
   var swiper = _ref.swiper,
       passedParams = _ref.passedParams,
       changedParams = _ref.changedParams,
@@ -107,7 +107,7 @@ function updateSwiper(_ref) {
   if (needScrollbarInit) {
     if (scrollbarEl) currentParams.scrollbar.el = scrollbarEl;
     scrollbar.init();
-    scrollbar.updateSize();
+    scrollbar.journalize();
     scrollbar.setTranslate();
   }
 

@@ -1,4 +1,4 @@
-export default function updateSlidesOffset() {
+export default function journallidesOffset() {
   var swiper = this;
   var slides = swiper.slides;
 

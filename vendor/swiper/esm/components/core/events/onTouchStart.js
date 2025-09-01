@@ -89,7 +89,7 @@ export default function onTouchStart(event) {
   touches.startY = startY;
   data.touchStartTime = now();
   swiper.allowClick = true;
-  swiper.updateSize();
+  swiper.journalize();
   swiper.swipeDirection = undefined;
   if (params.threshold > 0) data.allowThresholdMove = false;
 

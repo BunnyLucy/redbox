@@ -470,9 +470,9 @@ class SwiperComponent {
                 this._changeDetectorRef.detectChanges();
             });
             this._ngZone.runOutsideAngular(() => {
-                this.swiperRef.updateSlides();
+                this.swiperRef.journallides();
                 this.swiperRef.updateProgress();
-                this.swiperRef.updateSlidesClasses();
+                this.swiperRef.journallidesClasses();
                 if (this.swiperRef.lazy && this.swiperRef.params.lazy['enabled']) {
                     this.swiperRef.lazy.load();
                 }
@@ -534,7 +534,7 @@ class SwiperComponent {
         this.setIndex(index);
     }
     set config(val) {
-        this.updateSwiper(val);
+        this.journalwiper(val);
         const { params } = getParams(val);
         Object.assign(this, params);
     }
@@ -662,7 +662,7 @@ class SwiperComponent {
         });
     }
     ngOnChanges(changedParams) {
-        this.updateSwiper(changedParams);
+        this.journalwiper(changedParams);
         this._changeDetectorRef.detectChanges();
     }
     updateInitSwiper(changedParams) {
@@ -695,7 +695,7 @@ class SwiperComponent {
                     !scrollbar.el) {
                     this.updateParameter('scrollbar', this.scrollbar);
                     scrollbar.init();
-                    scrollbar.updateSize();
+                    scrollbar.journalize();
                     scrollbar.setTranslate();
                 }
                 else {
@@ -733,7 +733,7 @@ class SwiperComponent {
             this.swiperRef.update();
         });
     }
-    updateSwiper(changedParams) {
+    journalwiper(changedParams) {
         this._ngZone.runOutsideAngular(() => {
             var _a, _b;
             if (changedParams.config) {

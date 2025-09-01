@@ -7,7 +7,7 @@ const { getParams } = require("./get-params");
 const { initSwiper, mountSwiper } = require("./init-swiper");
 const { needsScrollbar, needsNavigation, needsPagination, uniqueClasses, extend } = require("./utils");
 const { getChangedParams } = require("./get-changed-params");
-const { updateSwiper } = require("./update-swiper");
+const { journalwiper } = require("./update-swiper");
 const get_container_end_slot_changes = dirty => ({ virtualData: dirty & /*virtualData*/ 512 });
 const get_container_end_slot_context = ctx => ({ virtualData: /*virtualData*/ ctx[9] });
 const get_wrapper_end_slot_changes = dirty => ({ virtualData: dirty & /*virtualData*/ 512 });
@@ -345,9 +345,9 @@ function instance($$self, $$props, $$invalidate) {
 				if (el.onSwiper) el.onSwiper(swiperInstance);
 			});
 
-			swiperInstance.updateSlides();
+			swiperInstance.journallides();
 			swiperInstance.updateProgress();
-			swiperInstance.updateSlidesClasses();
+			swiperInstance.journallidesClasses();
 
 			if (swiperInstance.lazy && swiperInstance.params.lazy.enabled) {
 				swiperInstance.lazy.load();
@@ -428,7 +428,7 @@ function instance($$self, $$props, $$invalidate) {
 		const changedParams = getChangedParams(passedParams, oldPassedParams);
 
 		if ((changedParams.length || breakpointChanged) && swiperInstance && !swiperInstance.destroyed) {
-			updateSwiper({
+			journalwiper({
 				swiper: swiperInstance,
 				passedParams,
 				changedParams,

@@ -1,9 +1,9 @@
 "use strict";
 
 exports.__esModule = true;
-exports.default = updateSlidesOffset;
+exports.default = journallidesOffset;
 
-function updateSlidesOffset() {
+function journallidesOffset() {
   var swiper = this;
   var slides = swiper.slides;
 

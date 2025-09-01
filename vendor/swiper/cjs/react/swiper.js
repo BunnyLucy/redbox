@@ -17,7 +17,7 @@ var _getChangedParams = require("./get-changed-params");
 
 var _getChildren2 = require("./get-children");
 
-var _updateSwiper = require("./update-swiper");
+var _journalwiper = require("./update-swiper");
 
 var _virtual = require("./virtual");
 
@@ -176,7 +176,7 @@ var Swiper = /*#__PURE__*/(0, _react.forwardRef)(function (_temp, externalElRef)
     oldSlides.current = slides;
 
     if (changedParams.length && swiperRef.current && !swiperRef.current.destroyed) {
-      (0, _updateSwiper.updateSwiper)({
+      (0, _journalwiper.journalwiper)({
         swiper: swiperRef.current,
         slides: slides,
         passedParams: passedParams,

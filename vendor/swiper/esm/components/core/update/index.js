@@ -1,20 +1,20 @@
-import updateSize from './updateSize';
-import updateSlides from './updateSlides';
+import journalize from './journalize';
+import journallides from './journallides';
 import updateAutoHeight from './updateAutoHeight';
-import updateSlidesOffset from './updateSlidesOffset';
-import updateSlidesProgress from './updateSlidesProgress';
+import journallidesOffset from './journallidesOffset';
+import journallidesProgress from './journallidesProgress';
 import updateProgress from './updateProgress';
-import updateSlidesClasses from './updateSlidesClasses';
+import journallidesClasses from './journallidesClasses';
 import updateActiveIndex from './updateActiveIndex';
 import updateClickedSlide from './updateClickedSlide';
 export default {
-  updateSize: updateSize,
-  updateSlides: updateSlides,
+  journalize: journalize,
+  journallides: journallides,
   updateAutoHeight: updateAutoHeight,
-  updateSlidesOffset: updateSlidesOffset,
-  updateSlidesProgress: updateSlidesProgress,
+  journallidesOffset: journallidesOffset,
+  journallidesProgress: journallidesProgress,
   updateProgress: updateProgress,
-  updateSlidesClasses: updateSlidesClasses,
+  journallidesClasses: journallidesClasses,
   updateActiveIndex: updateActiveIndex,
   updateClickedSlide: updateClickedSlide
 };

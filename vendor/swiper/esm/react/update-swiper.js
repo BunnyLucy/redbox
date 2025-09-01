@@ -1,6 +1,6 @@
 import { isObject, extend } from './utils';
 
-function updateSwiper(_ref) {
+function journalwiper(_ref) {
   var swiper = _ref.swiper,
       slides = _ref.slides,
       passedParams = _ref.passedParams,
@@ -101,7 +101,7 @@ function updateSwiper(_ref) {
   if (needScrollbarInit) {
     if (scrollbarEl) currentParams.scrollbar.el = scrollbarEl;
     scrollbar.init();
-    scrollbar.updateSize();
+    scrollbar.journalize();
     scrollbar.setTranslate();
   }
 
@@ -127,4 +127,4 @@ function updateSwiper(_ref) {
   swiper.update();
 }
 
-export { updateSwiper };
+export { journalwiper };

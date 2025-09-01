@@ -80,7 +80,7 @@ function setBreakpoint() {
   if (needsReLoop && initialized) {
     swiper.loopDestroy();
     swiper.loopCreate();
-    swiper.updateSlides();
+    swiper.journallides();
     swiper.slideTo(activeIndex - loopedSlides + swiper.loopedSlides, 0, false);
   }
 

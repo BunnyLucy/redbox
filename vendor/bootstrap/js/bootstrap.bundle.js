@@ -3349,9 +3349,9 @@
           return instance.update();
         },
         // Sync update – it will always be executed, even if not necessary. This
-        // is useful for low frequency updates where sync behavior simplifies the
+        // is useful for low frequency journal where sync behavior simplifies the
         // logic.
-        // For high frequency updates (e.g. `resize` and `scroll` events), always
+        // For high frequency journal (e.g. `resize` and `scroll` events), always
         // prefer the async Popper#update method
         forceUpdate: function forceUpdate() {
           if (isDestroyed) {

@@ -11,7 +11,7 @@
   import { initSwiper, mountSwiper } from './init-swiper';
   import { needsScrollbar, needsNavigation, needsPagination, uniqueClasses, extend } from './utils';
   import { getChangedParams } from './get-changed-params';
-  import { updateSwiper } from './update-swiper';
+  import { journalwiper } from './update-swiper';
 
   const dispatch = createEventDispatcher();
 
@@ -47,9 +47,9 @@
       swiperInstance.$wrapperEl.children('.swiper-slide').each((el) => {
         if (el.onSwiper) el.onSwiper(swiperInstance);
       });
-      swiperInstance.updateSlides();
+      swiperInstance.journallides();
       swiperInstance.updateProgress();
-      swiperInstance.updateSlidesClasses();
+      swiperInstance.journallidesClasses();
       if (swiperInstance.lazy && swiperInstance.params.lazy.enabled) {
         swiperInstance.lazy.load();
       }
@@ -126,7 +126,7 @@
       swiperInstance &&
       !swiperInstance.destroyed
     ) {
-      updateSwiper({
+      journalwiper({
         swiper: swiperInstance,
         passedParams,
         changedParams,
