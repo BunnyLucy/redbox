@@ -47,10 +47,9 @@
             <!-- Collapsed Navigation    -->
             <div class="collapse navbar-collapse" id="navigationCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown"><a class="nav-link" href="index.html">首頁</a>
-                </li>
+                <li class="nav-item dropdown"><a class="nav-link" href="index.html">首頁</a></li>
                 <!-- homepage dropdown-->
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" aria-expanded="false">我們是誰</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">我們是誰</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
                     <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">總覽</a></li>
                     <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zxt.html">主席團</a></li>
@@ -149,9 +148,9 @@
                 <!-- dropdown menu [contact]-->
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切換語言 switch language</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2025.html">简体中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2025.html">繁體中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/gallery2025.html">English</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/whoweare-zl.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/whoweare-zl.html">English</a></li>
                   </ul>
                 </li>
               </ul>
@@ -164,7 +163,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1 class="cn-text-neibu">圖片牆</h1>
+              <h1 class="cn-text-neibu">加入我們</h1>
             </div>
           </div>
         </div>
@@ -173,110 +172,131 @@
       <section class="py-5">
         <div class="container">
           <div class="row g-5">
-            <!-- PAGE SIDEBAR-->
-            <div class="col-lg-3">
-              <nav class="nav flex-column nav-pills fs-5"> 
-                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="gallery2025.html">
-                  <span>2025年</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2024.html">
-                  <span>2024年</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2023.html">
-                  <span>2023年</span><i class="fas fa-angle-right"></i></a>
-              </nav>
-            </div>
-
             <!-- PAGE CONTENT-->
             <div class="col-lg-9">
-              <!-- 照片墙容器 -->
-              <div id="gallery2025" class="photo-wall"></div>
 
-              <!-- Masonry 瀑布流 + 美化 -->
-              <style>
-              /* 照片墙容器：masonry 排布 */
-              .photo-wall {
-                column-count: 3;        /* 列数：桌面端 3 列 */
-                column-gap: 1rem;       /* 列间距 */
-              }
+              <!-- 关于我们 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">關於我們</h3>
+                <p style="color:#222;">Red Box 是一個致力於解決 <strong>月經貧困（Period Poverty）</strong> 的公益組織。隨着組織不斷髮展，我們已經逐漸成長爲一個覆蓋全球的社區。我們相信，每一個人都能爲推動經期平等貢獻力量。</p>
+              </div>
 
-              .photo-item {
-                margin-bottom: 1rem;
-                break-inside: avoid;    /* 避免图片被分割 */
-                overflow: hidden;
-                border-radius: 12px;    /* 圆角增加艺术感 */
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-              }
+              <!-- 为什么加入 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">爲什麼加入 Red Box？</h3>
+                <p style="color:#222;">在 Red Box，你不僅能爲公益事業貢獻力量，還能結識一羣志同道合的夥伴，把愛與能量傳遞到世界的每一個角落。我們期待更多小夥伴的加入，一起匯聚力量，推動改變！</p>
+                <p style="color:#222;">同時，你也將在活動中不斷成長：</p>
+                <ul style="color:#222;">
+                  <li>提升 <strong>領導力、組織力與溝通協調能力</strong></li>
+                  <li>通過親身參與 <strong>策劃、執行與宣傳</strong> 等環節，全面鍛鍊與提升自我</li>
+                  <li>在實踐中積累寶貴經驗，增強綜合競爭力</li>
+                </ul>
+              </div>
 
-              .photo-item img {
-                width: 100%;
-                display: block;
-                transition: transform 0.3s ease;
-                border-radius: 12px;
-                cursor: zoom-in; /* 鼠标提示可点 */
-              }
+              <!-- 招募岗位 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">招募崗位</h3>
+                <p style="color:#222;">本次開放以下四類崗位申請：</p>
+                <ul style="color:#222;">
+                  <li><strong>Red Box 組織成員</strong> —— 一起參與公益項目，共同成長。</li>
+                  <li><strong>Red Box 地區代表（以省/州爲單位）</strong> —— 代表所在地區，推動項目在本地的落地與執行；統籌和協調地區整體事務安排；擴大 Red Box 在本地區的影響力和社會聲量。</li>
+                  <li><strong>Red Box 校園代表（小學/初中/高中/大學）</strong> —— 在校園內傳播 Red Box 的公益理念，提升同學們的認知與關注；策劃並組織校園相關活動；推動校園內的志願者招募和團隊建設。</li>
+                  <li><strong>Red Box 主席團成員（僅限現有成員）</strong> —— 負責統籌管理和戰略規劃。</li>
+                </ul>
+              </div>
 
-              .photo-item img:hover {
-                transform: scale(1.05); /* 悬停微缩放 */
-              }
+              <!-- 申请流程 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">申請流程</h3>
+                <ul style="color:#222;">
+                  <li>所有崗位需填寫 <strong>申請表</strong></li>
+                  <li>組織成員：通過申請表審覈後，結果將以郵件通知</li>
+                  <li>地區代表，校園代表，主席團成員：通過申請表審覈後，結果將以郵件通知，並設有二輪面試環節</li>
+                </ul>
+              </div>
 
-              /* 响应式调整 */
-              @media (max-width: 992px) {
-                .photo-wall { column-count: 2; }
-              }
-              @media (max-width: 576px) {
-                .photo-wall { column-count: 1; }
-              }
-              </style>
-              <!-- 自动生成 18 张图 -->
-              <script>
-                function generateGallery(containerId, year, count) {
-                  const container = document.getElementById(containerId);
-                  if (!container) return;
+              <!-- 我们相信 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">我們相信</h3>
+                <p style="color:#222;">每一位申請者都是獨一無二的存在。無論你來自哪裏，我們都期待你的加入。讓我們在 Red Box 的大家庭裏攜手，爲解決月經貧困貢獻自己的力量，做一些真正有意義的事情。<strong>Breaking the silence, ending the poverty!</strong> 讓我們不再保持沉默！</p>
+              </div>
 
-                  for (let i = 1; i <= count; i++) {
-                    const div = document.createElement("div");
-                    div.className = "photo-item";
+              <!-- 填写问卷按钮 -->
+              <div class="text-center mb-5">
+                <a href="https://www.wjx.cn/vm/th44XxM.aspx#" target="_blank" class="btn fixed-survey-btn">填寫申請問卷</a>
+              </div>
 
-                    div.innerHTML = `
-                      <a href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" data-lightbox="gallery${year}" data-title="${year} 活動照片 ${i}">
-                        <img src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" alt="pic${i}">
-                      </a>
-                    `;
-
-                    container.appendChild(div);
-                  }
-                }
-
-                // 调用生成 18 张 2025 年的照片
-                generateGallery("gallery2025", 2025, 18);
-              </script>
             </div>
 
+
             <style>
-            .col-lg-9 p {
-              line-height: 1.7;
-              margin-bottom: 1.2rem;
+            /* 桌面端：右下角固定 */
+            .fixed-survey-btn {
+              position: fixed;
+              bottom: 2rem;   /* 距离底部 2rem */
+              right: 2rem;    /* 距离右边 2rem */
+              background-color: #bf544f;
+              color: white;
+              padding: 1rem 2rem;
+              font-size: 1rem;
+              border: none;
+              border-radius: 6px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+              z-index: 9999;
+              text-decoration: none;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
-            .card h5 {
-              font-weight: 600;
+
+            /* 悬停时轻微放大 */
+            .fixed-survey-btn:hover {
+              transform: scale(1.05);
+              box-shadow: 0 6px 16px rgba(0,0,0,0.25);
             }
-            .card-text {
-              font-size: 0.95rem;
+
+            /* 响应式缩放 */
+            @media (min-width: 1200px) {
+              .fixed-survey-btn {
+                font-size: 1.2rem;
+                padding: 1.2rem 2.5rem;
+              }
             }
+            @media (min-width: 1600px) {
+              .fixed-survey-btn {
+                font-size: 1.4rem;
+                padding: 1.5rem 3rem;
+              }
+            }
+
+            /* 移动端：底部横向铺满 */
+            @media (max-width: 768px) {
+              .fixed-survey-btn {
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                border-radius: 0;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 1.1rem;
+                transform: none; /* 移动端无缩放 */
+              }
+
+              .fixed-survey-btn:hover {
+                transform: none; /* 移动端无悬停效果 */
+              }
+            }
+
             </style>
 
-          </div>
         </div>
       </section>
-
+    </div>
     <!-- JavaScript files-->
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/vendor/waypoints/lib/noframework.waypoints.js"></script>
     <script src="/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/vendor/choices.js/public/assets/scripts/choices.js"></script>
     <script src="/js/theme.js"></script>
-    <!-- Lightbox2 样式 -->
-    <link href="https://unpkg.com/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
-    <script src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 

@@ -148,9 +148,9 @@
                 <!-- dropdown menu [contact]-->
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Switch language 切换语言</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/gallery2023.html">简体中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2023.html">繁體中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2023.html">English</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-zl.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/whoweare-zl.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/whoweare-zl.html">English</a></li>
                   </ul>
                 </li>
               </ul>
@@ -163,7 +163,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1 class="en-text-neibu">GALLERY</h1>
+              <h1 class="en-text-neibu">JOIN US</h1>
             </div>
           </div>
         </div>
@@ -172,110 +172,130 @@
       <section class="py-5">
         <div class="container">
           <div class="row g-5">
-            <!-- PAGE SIDEBAR-->
-            <div class="col-lg-3">
-              <nav class="nav flex-column nav-pills fs-5"> 
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2025.html">
-                  <span>2025</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2024.html">
-                  <span>2024</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="gallery2023.html">
-                  <span>2023</span><i class="fas fa-angle-right"></i></a>
-              </nav>
-            </div>
-
             <!-- PAGE CONTENT-->
             <div class="col-lg-9">
-              <!-- 照片墙容器 -->
-              <div id="gallery2023" class="photo-wall"></div>
 
-              <!-- Masonry 瀑布流 + 美化 -->
-              <style>
-              /* 照片墙容器：masonry 排布 */
-              .photo-wall {
-                column-count: 3;        /* 列数：桌面端 3 列 */
-                column-gap: 1rem;       /* 列间距 */
-              }
+              <!-- 关于我们 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">About Us</h3>
+                <p style="color:#222;">Red Box is a nonprofit organization dedicated to addressing <strong>Period Poverty</strong>.As our organization continues to grow, we have gradually developed into a global community. We believe that everyone can contribute to promoting menstrual equity.</p>
+              </div>
 
-              .photo-item {
-                margin-bottom: 1rem;
-                break-inside: avoid;    /* 避免图片被分割 */
-                overflow: hidden;
-                border-radius: 12px;    /* 圆角增加艺术感 */
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-              }
+              <!-- 为什么加入 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">Why Join Red Box?</h3>
+                <p style="color:#222;">At Red Box, you will not only contribute to meaningful public service, but also connect with a group of like-minded peers, spreading love and energy to every corner of the world. We look forward to welcoming more members to join us, so we can gather strength and drive real change together!</p>
+                <p style="color:#222;">Meanwhile, you will also grow personally through your participation:</p>
+                <ul style="color:#222;">
+                  <li>Improve your <strong>leadership, organizational, and communication skills</strong></li>
+                  <li>Gain hands-on experience in <strong>planning, execution, and promotion</strong> of events</li>
+                  <li>Build valuable experience and enhance your overall competitiveness</li>
+                </ul>
+              </div>
 
-              .photo-item img {
-                width: 100%;
-                display: block;
-                transition: transform 0.3s ease;
-                border-radius: 12px;
-                cursor: zoom-in; /* 鼠标提示可点 */
-              }
+              <!-- 招募岗位 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">Open Positions</h3>
+                <p style="color:#222;">We are now opening applications for the following four roles:</p>
+                <ul style="color:#222;">
+                  <li><strong>Red Box Member</strong> —— Participate in public service projects and grow together.</li>
+                  <li><strong>Red Box Regional Representative (by province/state) </strong> —— Represent your region, lead the implementation of projects locally, coordinate overall regional affairs, and expand Red Box’s influence in your area.</li>
+                  <li><strong>Red Box Campus Representative (elementary/middle/high school/university) </strong> —— Promote Red Box’s mission on campus, raise awareness among students, organize campus activities, and recruit/lead student volunteers.</li>
+                  <li><strong>Red Box Executive Committee Member (for current members only) </strong> —— Responsible for overall coordination and strategic planning.</li>
+                </ul>
+              </div>
 
-              .photo-item img:hover {
-                transform: scale(1.05); /* 悬停微缩放 */
-              }
+              <!-- 申请流程 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">Application Process</h3>
+                <ul style="color:#222;">
+                  <li>All applicants must fill out an <strong>application form</strong></li>
+                  <li>Members: Results will be notified by email after the application review</li>
+                  <li>Regional Representatives, Campus Representatives, and Executive Committee Members: Applicants who pass the first-round application review will be notified by email and invited to a second-round interview. Final results will also be communicated by email</li>
+                </ul>
+              </div>
 
-              /* 响应式调整 */
-              @media (max-width: 992px) {
-                .photo-wall { column-count: 2; }
-              }
-              @media (max-width: 576px) {
-                .photo-wall { column-count: 1; }
-              }
-              </style>
-              <!-- 自动生成 18 张图 -->
-              <script>
-                function generateGallery(containerId, year, count) {
-                  const container = document.getElementById(containerId);
-                  if (!container) return;
+              <!-- 我们相信 -->
+              <div class="mb-5 p-4 bg-white shadow-sm rounded">
+                <h3 class="mb-3" style="color:#bf544f;">Our Belief</h3>
+                <p style="color:#222;">Every applicant is unique. No matter where you come from, we look forward to your joining us. Let’s come together as part of the Red Box family to fight period poverty and make a real difference.<strong>Breaking the silence, ending the poverty!</strong> Let’s no longer remain silent!</p>
+              </div>
 
-                  for (let i = 1; i <= count; i++) {
-                    const div = document.createElement("div");
-                    div.className = "photo-item";
+              <!-- 填写问卷按钮 -->
+              <div class="text-center mb-5">
+                <a href="https://www.wjx.cn/vm/th44XxM.aspx#" target="_blank" class="btn fixed-survey-btn">SUBMIT APPLICATION</a>
+              </div>
 
-                    div.innerHTML = `
-                      <a href="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" data-lightbox="gallery${year}" data-title="${year} Event photo ${i}">
-                        <img src="https://cdn.jsdelivr.net/gh/BunnyLucy/redbox@main/img/${year}/${i}.avif" alt="pic${i}">
-                      </a>
-                    `;
-
-                    container.appendChild(div);
-                  }
-                }
-
-                // 调用生成 18 张 2025 年的照片
-                generateGallery("gallery2023", 2023, 4);
-              </script>
             </div>
 
+
             <style>
-            .col-lg-9 p {
-              line-height: 1.7;
-              margin-bottom: 1.2rem;
+            /* 桌面端：右下角固定 */
+            .fixed-survey-btn {
+              position: fixed;
+              bottom: 2rem;   /* 距离底部 2rem */
+              right: 2rem;    /* 距离右边 2rem */
+              background-color: #bf544f;
+              color: white;
+              padding: 1rem 2rem;
+              font-size: 1rem;
+              border: none;
+              border-radius: 6px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+              z-index: 9999;
+              text-decoration: none;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
-            .card h5 {
-              font-weight: 600;
+
+            /* 悬停时轻微放大 */
+            .fixed-survey-btn:hover {
+              transform: scale(1.05);
+              box-shadow: 0 6px 16px rgba(0,0,0,0.25);
             }
-            .card-text {
-              font-size: 0.95rem;
+
+            /* 响应式缩放 */
+            @media (min-width: 1200px) {
+              .fixed-survey-btn {
+                font-size: 1.2rem;
+                padding: 1.2rem 2.5rem;
+              }
+            }
+            @media (min-width: 1600px) {
+              .fixed-survey-btn {
+                font-size: 1.4rem;
+                padding: 1.5rem 3rem;
+              }
+            }
+
+            /* 移动端：底部横向铺满 */
+            @media (max-width: 768px) {
+              .fixed-survey-btn {
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                border-radius: 0;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 1.1rem;
+                transform: none; /* 移动端无缩放 */
+              }
+
+              .fixed-survey-btn:hover {
+                transform: none; /* 移动端无悬停效果 */
+              }
             }
             </style>
 
-          </div>
         </div>
       </section>
-
+    </div>
     <!-- JavaScript files-->
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/vendor/waypoints/lib/noframework.waypoints.js"></script>
     <script src="/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/vendor/choices.js/public/assets/scripts/choices.js"></script>
     <script src="/js/theme.js"></script>
-    <!-- Lightbox2 样式 -->
-    <link href="https://unpkg.com/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
-    <script src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 

@@ -142,6 +142,7 @@
                         Email：chinaredboxorg@gmail.com
                       </a>
                     </li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.instagram.com/redboxhkchina?igsh=MTVqZ25sNXl0ajNybg==">Ins：Redbox</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown"><a class="nav-link" href="join.html">加入我们</a></li>
@@ -199,7 +200,7 @@
                 <p style="color:#222;">本次开放以下四类岗位申请：</p>
                 <ul style="color:#222;">
                   <li><strong>Red Box 组织成员</strong> —— 一起参与公益项目，共同成长。</li>
-                  <li><strong>Red Box 地区代表（按省/州划分）</strong> —— 代表所在地区，推动项目在本地的落地与执行；统筹和协调地区整体事务安排；扩大 Red Box 在本地区的影响力和社会声量。</li>
+                  <li><strong>Red Box 地区代表（以省/州为单位）</strong> —— 代表所在地区，推动项目在本地的落地与执行；统筹和协调地区整体事务安排；扩大 Red Box 在本地区的影响力和社会声量。</li>
                   <li><strong>Red Box 校园代表（小学/初中/高中/大学）</strong> —— 在校园内传播 Red Box 的公益理念，提升同学们的认知与关注；策划并组织校园相关活动；推动校园内的志愿者招募和团队建设。</li>
                   <li><strong>Red Box 主席团成员（仅限现有成员）</strong> —— 负责统筹管理和战略规划。</li>
                 </ul>
@@ -211,6 +212,7 @@
                 <ul style="color:#222;">
                   <li>所有岗位需填写 <strong>申请表</strong></li>
                   <li>组织成员：通过申请表审核后，结果将以邮件通知</li>
+                  <li>地区代表，校园代表，主席团成员：通过申请表审核后，结果将以邮件通知，并设有二轮面试环节</li>
                 </ul>
               </div>
 
@@ -229,12 +231,11 @@
 
 
             <style>
-            /* 桌面端：右侧固定，用百分比定位 */
+            /* 桌面端：右下角固定 */
             .fixed-survey-btn {
               position: fixed;
-              top: 50%;        /* 屏幕高度百分比 */
-              right: 20%;       /* 屏幕宽度百分比 */
-              transform: translateY(-50%);
+              bottom: 2rem;   /* 距离底部 2rem */
+              right: 2rem;    /* 距离右边 2rem */
               background-color: #bf544f;
               color: white;
               padding: 1rem 2rem;
@@ -247,9 +248,9 @@
               transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
 
-            /* 悬停时只上浮，不变颜色 */
+            /* 悬停时轻微放大 */
             .fixed-survey-btn:hover {
-              transform: translateY(-50%) translateY(-3px); /* 上浮3px */
+              transform: scale(1.05);
               box-shadow: 0 6px 16px rgba(0,0,0,0.25);
             }
 
@@ -267,10 +268,9 @@
               }
             }
 
-            /* 移动端适配：屏幕宽度小于768px时 */
+            /* 移动端：底部横向铺满 */
             @media (max-width: 768px) {
               .fixed-survey-btn {
-                top: auto;
                 bottom: 0;
                 right: 0;
                 left: 0;
@@ -279,7 +279,7 @@
                 text-align: center;
                 padding: 1rem 0;
                 font-size: 1.1rem;
-                transform: none; /* 移动端不需要translate */
+                transform: none; /* 移动端无缩放 */
               }
 
               .fixed-survey-btn:hover {

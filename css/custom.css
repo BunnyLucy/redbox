@@ -28,6 +28,15 @@
   font-family: 'Playfair Display', serif;
 }
 
+.en-text-neibu {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900; /* 超粗体 */
+  font-size: clamp(2.8rem, 8vw, 5.2rem);
+  letter-spacing: 0.1em; /* 增加字间距 */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .en-text-italic {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -42,7 +51,7 @@
 .cn-text-neibu {
   font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; /* 黑体为主 */
   font-weight: 900; /* 超粗体 */
-  font-size: 4rem; /* 字体加大 */
+  font-size: clamp(2.8rem, 8vw, 4rem);
   letter-spacing: 0.1em; /* 增加字间距 */
   color: #ffffff;
   text-transform: uppercase;
