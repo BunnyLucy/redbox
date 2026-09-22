@@ -137,8 +137,8 @@
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
                     <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/user/profile/632524790000000023039c24?xsec_token=YBH17jsyfOGZIiuzKkRZNyOq1BkbjBcT-L5WYY1ZxGPP4%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5d05db0100000000160362ac&apptime=1754746879&share_id=9bd8f2041f524cc9854579d193649e5e&share_channel=copy_link">Xiaohongshu: Redbox Charity Organization</a></li>
                     <li>
-                      <a class="dropdown-item text-uppercase border-bottom" 
-                        href="javascript:void(0);" 
+                      <a class="dropdown-item text-uppercase border-bottom"
+                        href="javascript:void(0);"
                         onclick="copyEmail()">
                         Email：chinaredboxorg@gmail.com
                       </a>
@@ -146,13 +146,13 @@
                     <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.instagram.com/redboxhkchina?igsh=MTVqZ25sNXl0ajNybg==">Ins：Redbox</a></li>
                   </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="join.html">join us</a></li>
+                <li class="nav-item dropdown"><a class="nav-link" href="join.html">join us</a></li>
                 <!-- dropdown menu [contact]-->
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Switch language 切换语言</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/whoweare-dq.html">简体中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/whoweare-dq.html">繁體中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="whoweare-dq.html">English</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/gallery2026.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2026.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2026.html">English</a></li>
                   </ul>
                 </li>
               </ul>
@@ -165,7 +165,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1 class="en-text-neibu">WHO WE ARE?</h1>
+              <h1 class="en-text-neibu">GALLERY</h1>
             </div>
           </div>
         </div>
@@ -176,272 +176,136 @@
           <div class="row g-5">
             <!-- PAGE SIDEBAR-->
             <div class="col-lg-3">
-              <nav class="nav flex-column nav-pills fs-5"> 
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="whoweare-zl.html">
-                  <span>OVERVIEW</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="whoweare-zxt.html">
-                  <span>PRESIDIUM</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="whoweare-dq.html">
-                  <span>REGIONAL REPRESENTATIVE</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="https://www.xiaohongshu.com/explore/6711e4e8000000001b02ddc0?app_platform=android&ignoreEngage=true&app_version=8.98.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBy4hOG63ho9TasGnWqv0YILkZ-iOY0GvIpGB5T7w2lrs=&author_share=1&xhsshare=CopyLink&shareRedId=N0oyNUdHNDo2NzUyOTgwNjc5OTo6N0dM&apptime=1756610772&share_id=37ffda8513514e2fae96de66446849f3&share_channel=copy_link">
-                  <span>HALL OF FAME</span><i class="fas fa-angle-right"></i></a>
+              <nav class="nav flex-column nav-pills fs-5">
+                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="gallery2026.html">
+                  <span>2026</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2025.html">
+                  <span>2025</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2024.html">
+                  <span>2024</span><i class="fas fa-angle-right"></i></a>
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2023.html">
+                  <span>2023</span><i class="fas fa-angle-right"></i></a>
               </nav>
             </div>
+
+            <!-- PAGE CONTENT-->
             <div class="col-lg-9">
-              <div class="map-wrapper">
-                <div class="map-container">
-                  <img src="/img/map.png" alt="World Map" class="map-image" id="mapImage">
+              <!-- 照片墙容器 -->
+              <div id="gallery2026" class="photo-wall"></div>
 
-                  <!-- 坐标图标示例 -->
-                  <div class="map-marker" data-top="49.6" data-left="28"
-                      data-avatar="/img/whoweare/chongqing.avif"
-                      data-title="USA Massachusetts"
-                      data-name="Eugenia"
-                      data-link="region-asia.html">
-                    <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                  </div>
+              <!-- Masonry 瀑布流 + 美化 -->
+              <style>
+              /* 照片墙容器：masonry 排布 */
+              .photo-wall {
+                column-count: 3;        /* 列数：桌面端 3 列 */
+                column-gap: 1rem;       /* 列间距 */
+              }
 
-                  <div class="map-marker" data-top="49" data-left="26.9"
-                      data-avatar="/img/whoweare/operation.avif"
-                      data-title="USA New York"
-                      data-name="Jinchen"
-                      data-link="region-asia.html">
-                    <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                  </div>
+              .photo-item {
+                margin-bottom: 1rem;
+                break-inside: avoid;    /* 避免图片被分割 */
+                overflow: hidden;
+                border-radius: 12px;    /* 圆角增加艺术感 */
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+              }
 
-                <div class="map-marker" data-top="84" data-left="88.7"
-                    data-avatar="/img/whoweare/xini.avif" 
-                    data-title="Australia Sydney"
-                    data-name="Jennifer"
-                    data-link="region-asia.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+              .photo-item img {
+                width: 100%;
+                display: block;
+                transition: transform 0.3s ease;
+                border-radius: 12px;
+                cursor: zoom-in; /* 鼠标提示可点 */
+              }
 
-                <div class="map-marker" data-top="53" data-left="26.4" 
-                    data-avatar="/img/whoweare/president.avif"
-                    data-title="USA North Carolina"
-                    data-name="Kord"
-                    data-link="region-asia.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+              .photo-item img:hover {
+                transform: scale(1.05); /* 悬停微缩放 */
+              }
 
-                <div class="map-marker" data-top="43" data-left="47.6" 
-                    data-avatar="/img/whoweare/london.avif"
-                    data-title="UK London"
-                    data-name="Federico"
-                    data-link="region-asia.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+              /* 响应式调整 */
+              @media (max-width: 992px) {
+                .photo-wall { column-count: 2; }
+              }
+              @media (max-width: 576px) {
+                .photo-wall { column-count: 1; }
+              }
+              </style>
+              <!-- 自动生成 18 张图 -->
+              <script>
+                function generateGallery(containerId, year, count) {
+                  const container = document.getElementById(containerId);
+                  if (!container) return;
 
-                <div class="map-marker" data-top="41" data-left="46.8" 
-                    data-avatar="/img/whoweare/finance.avif"
-                    data-title="UK Manchester"
-                    data-name="Darius"
-                    data-link="region-asia.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+                  for (let i = 1; i <= count; i++) {
+                    const div = document.createElement("div");
+                    div.className = "photo-item";
 
-                <div class="map-marker" data-top="59.4" data-left="78.9" 
-                    data-avatar="/img/whoweare/HR.avif"
-                    data-title="China Hong Kong"
-                    data-name="Yuhan"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+                    div.innerHTML = `
+                      <a href="/img/${year}/${i}.jpg" data-lightbox="gallery${year}" data-title="${year} Event photo ${i}">
+                        <img src="/img/${year}/${i}.jpg" alt="pic${i}">
+                      </a>
+                    `;
 
-                <div class="map-marker" data-top="58.8" data-left="76.6" 
-                    data-avatar="/img/whoweare/guangxi.avif"
-                    data-title="China Guangxi"
-                    data-name="Yuan"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
+                    container.appendChild(div);
+                  }
+                }
 
-                <div class="map-marker" data-top="59.2" data-left="77.6" 
-                    data-avatar="/img/whoweare/ga.avif"
-                    data-title="China Guangdong"
-                    data-name="Peter"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <div class="map-marker" data-top="56.7" data-left="75.8" 
-                    data-avatar="/img/whoweare/sichuan.avif"
-                    data-title="China Sichuan"
-                    data-name="Pan"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <div class="map-marker" data-top="54" data-left="79.9" 
-                    data-avatar="/img/whoweare/jiangsu.avif"
-                    data-title="China Jiangsu"
-                    data-name="Ya"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <div class="map-marker" data-top="58.2" data-left="79.9" 
-                    data-avatar="/img/whoweare/marketing.avif"
-                    data-title="China Fujian"
-                    data-name="Yishu"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <div class="map-marker" data-top="56.4" data-left="80.9" 
-                    data-avatar="/img/whoweare/president.avif"
-                    data-title="China Zhejiang"
-                    data-name="Kord"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <div class="map-marker" data-top="56.5" data-left="77" 
-                    data-avatar="/img/whoweare/chongqing.avif"
-                    data-title="China Chongqing"
-                    data-name="Eugenia"
-                    data-link="region-europe.html">
-                  <img src="/img/marker-icon.png" alt="marker" class="marker-icon">
-                </div>
-
-                <!-- 信息框 -->
-                <div class="info-box" id="infoBox">
-                  <img id="infoAvatar" src="" alt="avatar">
-                  <div>
-                    <a id="infoName" href="#" class="name"></a><br>
-                    <a id="infoTitle" href="#" class="title"></a>
-                  </div>
-                </div>
-              </div>
+                // Generate 14 photos from 2026
+                generateGallery("gallery2026", 2026, 14);
+              </script>
             </div>
 
             <style>
-            /* 包裹层：小屏幕允许横向拖动 */
-            .map-wrapper {
-              width: 100%;
-              overflow-x: auto;
+            .col-lg-9 p {
+              line-height: 1.7;
+              margin-bottom: 1.2rem;
             }
-
-            /* 容器宽度固定比例，保证图片不变形 */
-            .map-container {
-              position: relative;
-              width: 100%;
-              max-width: 1400px;
-              margin: 0 auto;
-              z-index: 1; 
-            }
-
-            /* 地图：宽度始终100%，高度随比例自适应 */
-            .map-image {
-              width: 100%;
-              height: auto;
-              display: block;
-            }
-
-            /* marker 样式 */
-            .map-marker {
-              position: absolute;
-              transform: translate(-50%, -50%);
-              cursor: pointer;
-              transition: transform 0.2s ease;
-            }
-            .map-marker:hover {
-              transform: translate(-50%, -50%) scale(1.2);
-            }
-            .marker-icon {
-              width: 20px;
-              height: 30px;
-            }
-
-            /* 信息框 */
-            .info-box {
-              position: absolute;
-              display: none;
-              flex-direction: column;
-              align-items: center;
-              background: white;
-              padding: 10px;
-              border-radius: 6px;
-              box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-              pointer-events: none;
-              width: 120px;
-              z-index: 10;
-              text-align: center;
-            }
-            .info-box img {
-              width: 100%;
-              height: 150px;
-              object-fit: cover;
-              border-radius: 4px;
-              margin-bottom: 8px;
-            }
-            .info-box .title {
+            .card h5 {
               font-weight: 600;
-              font-size: 0.85rem;
-              color: #bf544f;
-              text-decoration: none;
             }
-            .info-box .name {
+            .card-text {
               font-size: 0.95rem;
-              color: #221e1e;
-              text-decoration: none;
             }
             </style>
 
-            <script>
-            const markers = document.querySelectorAll('.map-marker');
-            const infoBox = document.getElementById('infoBox');
-            const infoAvatar = document.getElementById('infoAvatar');
-            const infoTitle = document.getElementById('infoTitle');
-            const infoName = document.getElementById('infoName');
-            const mapImage = document.getElementById('mapImage');
+          </div>
+        </div>
+      </section>
 
-            function positionMarkers() {
-              const rect = mapImage.getBoundingClientRect();
-              const naturalWidth = mapImage.naturalWidth;
-              const naturalHeight = mapImage.naturalHeight;
-              const scaleX = rect.width / naturalWidth;
-              const scaleY = rect.height / naturalHeight;
+    <!-- JavaScript files-->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="/js/theme.js"></script>
+    <!-- Lightbox2 样式 -->
+    <link href="https://unpkg.com/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite -
+      //   see more here
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
 
-              markers.forEach(marker => {
-                const top = parseFloat(marker.dataset.top);   // 百分比
-                const left = parseFloat(marker.dataset.left);
-                const x = (left / 100) * naturalWidth * scaleX;
-                const y = (top / 100) * naturalHeight * scaleY;
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('icons/orion-svg-sprite.svg');
 
-                marker.style.top = y + "px";
-                marker.style.left = x + "px";
-              });
-            }
-
-            // 初始加载 + 窗口缩放时重新定位
-            window.addEventListener('load', positionMarkers);
-            window.addEventListener('resize', positionMarkers);
-
-            // 点击 marker 显示信息框
-            markers.forEach(marker => {
-              marker.addEventListener('click', (e) => {
-                e.stopPropagation();
-                infoAvatar.src = marker.dataset.avatar;
-                infoTitle.textContent = marker.dataset.title;
-                infoTitle.href = marker.dataset.link;
-                infoName.textContent = marker.dataset.name;
-                infoName.href = marker.dataset.link;
-
-                infoBox.style.top = (marker.offsetTop - infoBox.offsetHeight - 10) + 'px';
-                infoBox.style.left = (marker.offsetLeft - infoBox.offsetWidth/2 + marker.offsetWidth/2) + 'px';
-                infoBox.style.display = 'flex';
-              });
-            });
-
-            // 点击其他地方关闭信息框
-            document.addEventListener('click', function(e) {
-              if(!e.target.closest('.map-marker') && !e.target.closest('#infoBox')) {
-                infoBox.style.display = 'none';
-              }
-            });
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-            </body>
-            </html>
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

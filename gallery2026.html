@@ -137,8 +137,8 @@
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
                     <li><a class="dropdown-item text-uppercase border-bottom" href="https://www.xiaohongshu.com/user/profile/632524790000000023039c24?xsec_token=YBH17jsyfOGZIiuzKkRZNyOq1BkbjBcT-L5WYY1ZxGPP4%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5d05db0100000000160362ac&apptime=1754746879&share_id=9bd8f2041f524cc9854579d193649e5e&share_channel=copy_link">小红书：Redbox公益组织</a></li>
                     <li>
-                      <a class="dropdown-item text-uppercase border-bottom" 
-                        href="javascript:void(0);" 
+                      <a class="dropdown-item text-uppercase border-bottom"
+                        href="javascript:void(0);"
                         onclick="copyEmail()">
                         Email：chinaredboxorg@gmail.com
                       </a>
@@ -150,9 +150,9 @@
                 <!-- dropdown menu [contact]-->
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="contactMegamenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">切换语言 switch language</a>
                   <ul class="dropdown-menu dropdown-menu-end m-0" aria-labelledby="contactMegamenu">
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2024.html">简体中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2024.html">繁體中文</a></li>
-                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/gallery2024.html">English</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="gallery2026.html">简体中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/fz/gallery2026.html">繁體中文</a></li>
+                    <li><a class="dropdown-item text-uppercase border-bottom" href="/en/gallery2026.html">English</a></li>
                   </ul>
                 </li>
               </ul>
@@ -176,12 +176,12 @@
           <div class="row g-5">
             <!-- PAGE SIDEBAR-->
             <div class="col-lg-3">
-              <nav class="nav flex-column nav-pills fs-5"> 
-                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2026.html">
+              <nav class="nav flex-column nav-pills fs-5">
+                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="gallery2026.html">
                   <span>2026年</span><i class="fas fa-angle-right"></i></a>
                 <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2025.html">
                   <span>2025年</span><i class="fas fa-angle-right"></i></a>
-                <a class="nav-link d-flex align-items-center justify-content-between py-3 active" href="gallery2024.html">
+                <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2024.html">
                   <span>2024年</span><i class="fas fa-angle-right"></i></a>
                 <a class="nav-link d-flex align-items-center justify-content-between py-3" href="gallery2023.html">
                   <span>2023年</span><i class="fas fa-angle-right"></i></a>
@@ -191,7 +191,7 @@
             <!-- PAGE CONTENT-->
             <div class="col-lg-9">
               <!-- 照片墙容器 -->
-              <div id="gallery2024" class="photo-wall"></div>
+              <div id="gallery2026" class="photo-wall"></div>
 
               <!-- Masonry 瀑布流 + 美化 -->
               <style>
@@ -240,8 +240,8 @@
                     div.className = "photo-item";
 
                     div.innerHTML = `
-                      <a href="/img/${year}/${i}.avif" data-lightbox="gallery${year}" data-title="${year} 活动照片 ${i}">
-                        <img src="/img/${year}/${i}.avif" alt="pic${i}">
+                      <a href="/img/${year}/${i}.jpg" data-lightbox="gallery${year}" data-title="${year} 活动照片 ${i}">
+                        <img src="/img/${year}/${i}.jpg" alt="pic${i}">
                       </a>
                     `;
 
@@ -249,7 +249,8 @@
                   }
                 }
 
-                generateGallery("gallery2024", 2024, 38);
+                // 调用生成 14 张 2026 年的照片
+                generateGallery("gallery2026", 2026, 14);
               </script>
             </div>
 
@@ -281,12 +282,12 @@
     <script src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
       // ------------------------------------------------------- //
-      //   Inject SVG Sprite - 
-      //   see more here 
+      //   Inject SVG Sprite -
+      //   see more here
       //   https://css-tricks.com/ajaxing-svg-sprite/
       // ------------------------------------------------------ //
       function injectSvgSprite(path) {
-      
+
           var ajax = new XMLHttpRequest();
           ajax.open("GET", path, true);
           ajax.send();
@@ -297,12 +298,12 @@
           document.body.insertBefore(div, document.body.childNodes[0]);
           }
       }
-      // this is set to BootstrapTemple website as you cannot 
+      // this is set to BootstrapTemple website as you cannot
       // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
       // while using file:// protocol
       // pls don't forget to change to your domain :)
-      injectSvgSprite('icons/orion-svg-sprite.svg'); 
-      
+      injectSvgSprite('icons/orion-svg-sprite.svg');
+
     </script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
